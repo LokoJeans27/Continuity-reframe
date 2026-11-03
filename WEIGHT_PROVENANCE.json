@@ -1,0 +1,182 @@
+{
+  "checked_date": "2026-11-03",
+  "scope": "four H3 files and three FLUX files actually selected in completed saved workflows",
+  "files": [
+    {
+      "category": "diffusion_models",
+      "filename": "minimax_h3_ref2va_pruned_nvfp4.safetensors",
+      "bytes": 12528636866,
+      "sha256": "3e1be702c95bc057c05a7d1867e8aeea33073dcf5743835f2f27f06a2f34c596",
+      "header_bytes": 116000,
+      "tensor_count": 1132,
+      "storage_dtypes": {
+        "F32": 210,
+        "BF16": 220,
+        "F16": 102,
+        "F8_E4M3": 200,
+        "U8": 400
+      },
+      "metadata_keys": [],
+      "pipeline": "H3",
+      "trailing_bytes_after_declared_tensors": 66,
+      "matching_repository": "Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot",
+      "pinned_revision": "908eccad7e68751190d04c171956f163bfeed741",
+      "published_filename": "MiniMax_H3_Ref2VA_pruned_nvfp4.safetensors",
+      "published_file_url": "https://huggingface.co/Abiray/Minimax-H3-nvfp4-INT4-INT8-Convrot/blob/908eccad7e68751190d04c171956f163bfeed741/MiniMax_H3_Ref2VA_pruned_nvfp4.safetensors",
+      "match": "full-file SHA256 and byte count match",
+      "original_download_route": "not established for H3; FLUX prior verification manifest names matching repository/revision",
+      "at_generation_hash": "not recorded in execution history; hashes measured against current local files identified by saved executed workflow"
+    },
+    {
+      "category": "text_encoders",
+      "filename": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "bytes": 15687142551,
+      "sha256": "35a88d51044231fe332301d7a62aa81e3f2cba62febeb446e2c1e3e0ef76f2c6",
+      "header_bytes": 231400,
+      "tensor_count": 2054,
+      "storage_dtypes": {
+        "F32": 351,
+        "BF16": 651,
+        "F8_E4M3": 350,
+        "I8": 1,
+        "U8": 701
+      },
+      "metadata_keys": [],
+      "pipeline": "H3",
+      "trailing_bytes_after_declared_tensors": 0,
+      "matching_repository": "Comfy-Org/MiniMax-H3",
+      "pinned_revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "published_filename": "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "published_file_url": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/54472221d27c695fca9621b0c3ed52f06c4af707/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "match": "full-file SHA256 and byte count match",
+      "original_download_route": "not established for H3; FLUX prior verification manifest names matching repository/revision",
+      "at_generation_hash": "not recorded in execution history; hashes measured against current local files identified by saved executed workflow"
+    },
+    {
+      "category": "vae",
+      "filename": "minimax_h3_video_vae_fp16.safetensors",
+      "bytes": 5207808496,
+      "sha256": "7c1f131492e7eddacaac9069a61b81bdd39de5cc96561e677c5eab1cdce5e522",
+      "header_bytes": 66328,
+      "tensor_count": 562,
+      "storage_dtypes": {
+        "F16": 562
+      },
+      "metadata_keys": [
+        "minimax_h3_video_vae"
+      ],
+      "pipeline": "H3",
+      "trailing_bytes_after_declared_tensors": 0,
+      "matching_repository": "Comfy-Org/MiniMax-H3",
+      "pinned_revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "published_filename": "vae/minimax_h3_video_vae_fp16.safetensors",
+      "published_file_url": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/54472221d27c695fca9621b0c3ed52f06c4af707/vae/minimax_h3_video_vae_fp16.safetensors",
+      "match": "full-file SHA256 and byte count match",
+      "original_download_route": "not established for H3; FLUX prior verification manifest names matching repository/revision",
+      "at_generation_hash": "not recorded in execution history; hashes measured against current local files identified by saved executed workflow"
+    },
+    {
+      "category": "vae",
+      "filename": "minimax_h3_audio_vae_fp32.safetensors",
+      "bytes": 605254808,
+      "sha256": "8e505d95dd1561d47abd43d4238fd40d9bb1ae9e147ed0a4cba778d76ae4db48",
+      "header_bytes": 105520,
+      "tensor_count": 917,
+      "storage_dtypes": {
+        "F32": 917
+      },
+      "metadata_keys": [
+        "minimax_h3_audio_vae"
+      ],
+      "pipeline": "H3",
+      "trailing_bytes_after_declared_tensors": 0,
+      "matching_repository": "Comfy-Org/MiniMax-H3",
+      "pinned_revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+      "published_filename": "vae/minimax_h3_audio_vae_fp32.safetensors",
+      "published_file_url": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/54472221d27c695fca9621b0c3ed52f06c4af707/vae/minimax_h3_audio_vae_fp32.safetensors",
+      "match": "full-file SHA256 and byte count match",
+      "original_download_route": "not established for H3; FLUX prior verification manifest names matching repository/revision",
+      "at_generation_hash": "not recorded in execution history; hashes measured against current local files identified by saved executed workflow"
+    },
+    {
+      "category": "diffusion_models",
+      "filename": "flux3_image_klein_sd_int8_convrot.safetensors",
+      "bytes": 5827874779,
+      "sha256": "847d8933548afd93df4af2cac2498e70891bf28d9dae06d695f536992e168fe2",
+      "header_bytes": 70896,
+      "tensor_count": 650,
+      "storage_dtypes": {
+        "F32": 172,
+        "BF16": 101,
+        "I8": 172,
+        "U8": 205
+      },
+      "metadata_keys": [
+        "format",
+        "model",
+        "dtype"
+      ],
+      "pipeline": "FLUX manual image experiment",
+      "trailing_bytes_after_declared_tensors": 0,
+      "matching_repository": "black-forest-labs/flux-3-image-klein-comfy",
+      "pinned_revision": "5c9b714851dc072b04a23ef6d2d36421f5ccb3a0",
+      "published_filename": "diffusion_models/flux3_image_klein_sd_int8_convrot.safetensors",
+      "published_file_url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/5c9b714851dc072b04a23ef6d2d36421f5ccb3a0/diffusion_models/flux3_image_klein_sd_int8_convrot.safetensors",
+      "match": "full-file SHA256 and byte count match",
+      "original_download_route": "not established for H3; FLUX prior verification manifest names matching repository/revision",
+      "at_generation_hash": "not recorded in execution history; hashes measured against current local files identified by saved executed workflow"
+    },
+    {
+      "category": "text_encoders",
+      "filename": "qwen3vl_4b_int8_convrot.safetensors",
+      "bytes": 4858559240,
+      "sha256": "32de113cbf8282b02cbff0794b637b9d6676da09314a1db5a30bcea9bf4ee01c",
+      "header_bytes": 149976,
+      "tensor_count": 1219,
+      "storage_dtypes": {
+        "F32": 253,
+        "BF16": 460,
+        "I8": 253,
+        "U8": 253
+      },
+      "metadata_keys": [],
+      "pipeline": "FLUX manual image experiment",
+      "trailing_bytes_after_declared_tensors": 0,
+      "matching_repository": "black-forest-labs/flux-3-image-klein-comfy",
+      "pinned_revision": "5c9b714851dc072b04a23ef6d2d36421f5ccb3a0",
+      "published_filename": "text_encoders/qwen3vl_4b_int8_convrot.safetensors",
+      "published_file_url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/5c9b714851dc072b04a23ef6d2d36421f5ccb3a0/text_encoders/qwen3vl_4b_int8_convrot.safetensors",
+      "match": "full-file SHA256 and byte count match",
+      "original_download_route": "not established for H3; FLUX prior verification manifest names matching repository/revision",
+      "at_generation_hash": "not recorded in execution history; hashes measured against current local files identified by saved executed workflow"
+    },
+    {
+      "category": "vae",
+      "filename": "flux2-vae.safetensors",
+      "bytes": 336211292,
+      "sha256": "868fe7b343cc8f3a19dbcfcafbc3d5f888802be3f89bd81b65b3621a066ce8f3",
+      "header_bytes": 25792,
+      "tensor_count": 251,
+      "storage_dtypes": {
+        "I64": 1,
+        "F32": 250
+      },
+      "metadata_keys": [],
+      "pipeline": "FLUX manual image experiment",
+      "trailing_bytes_after_declared_tensors": 0,
+      "matching_repository": "black-forest-labs/flux-3-image-klein-comfy",
+      "pinned_revision": "5c9b714851dc072b04a23ef6d2d36421f5ccb3a0",
+      "published_filename": "vae/flux2-vae.safetensors",
+      "published_file_url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/5c9b714851dc072b04a23ef6d2d36421f5ccb3a0/vae/flux2-vae.safetensors",
+      "match": "full-file SHA256 and byte count match",
+      "original_download_route": "not established for H3; FLUX prior verification manifest names matching repository/revision",
+      "at_generation_hash": "not recorded in execution history; hashes measured against current local files identified by saved executed workflow"
+    }
+  ],
+  "weights_copied_or_changed": false,
+  "limitations": [
+    "No clean install or conversion recreation performed",
+    "Hash equality identifies matching artifacts, not original download provenance",
+    "No permission to redistribute weights inferred"
+  ]
+}

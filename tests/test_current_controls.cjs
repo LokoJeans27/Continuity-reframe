@@ -1,0 +1,16 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const html=fs.readFileSync(__dirname+'/../camera_picker.html','utf8'),js=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+assert(!/[\u00c2\u00c3\ufffd]/.test(html),'No broken UTF-8 text');
+assert(html.includes('Regenerar instrucci\u00f3n'));assert(html.includes('\u00bfReemplazar'));
+const e={};for(const id of ['az','el','dist','shot','notes','preview','azout','elout','distout','cam','ray','sidecam','side','file','save','status','regenerate'])e[id]={value:'',attributes:{},handlers:{},addEventListener(n,f){this.handlers[n]=f},setAttribute(n,v){this.attributes[n]=v}};
+e.az.value='0';e.el.value='0';e.dist.value='1';e.shot.value='front';let saved,confirmation=false;
+const ctx={document:{getElementById:id=>e[id],createElement:()=>({click(){}})},window:{confirm:()=>confirmation},Blob:class{constructor(parts){this.parts=parts}},URL:{createObjectURL(b){saved=JSON.parse(b.parts[0]);return'blob:test'},revokeObjectURL(){}},setTimeout(){}};
+vm.createContext(ctx);vm.runInContext(js,ctx);vm.runInContext('scene={objects:[],acting:[]}',ctx);
+const old=e.preview.value;e.preview.value='Manual';e.preview.handlers.input();
+e.az.value='45';e.az.handlers.input();e.preview.value=old;e.preview.handlers.input();e.save.handlers.click();
+assert.equal(saved.camera,old);assert.equal(saved.camera_controls_match_instruction,false,'Old generated text is stale after controls change');assert.equal(saved.camera_instruction_source,'manual');
+e.el.value='20';e.el.handlers.input();assert.equal(e.preview.value,old,'Returning to old text must not disable preservation');
+e.regenerate.handlers.click();assert.equal(e.preview.value,old,'Cancel preserves old text');
+confirmation=true;e.regenerate.handlers.click();e.save.handlers.click();assert.equal(saved.camera_controls_match_instruction,true);assert(e.preview.value.includes('azimuth 45'));assert(e.preview.value.includes('elevation 20'));
+e.preview.value=ctx.instructionFromControls();e.preview.handlers.input();e.save.handlers.click();assert.equal(saved.camera_controls_match_instruction,true);assert.equal(saved.camera_instruction_source,'manual');
+console.log('PASS current-control agreement, old-text restoration, preservation, confirmation, manual-equal-current, UTF-8 labels. DOM harness only.');

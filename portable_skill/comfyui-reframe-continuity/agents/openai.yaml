@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reframe Video with Continuity"
+  short_description: "Plan new camera angles with semantic shot continuity"
+  default_prompt: "Use $comfyui-reframe-continuity to analyze this source shot, prepare a new-view first frame, and test a continuity-preserving video."

@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-11-03T12:49:00Z",
+  "artifact_kind": "portable_skill_export",
+  "installed_globally": false,
+  "formal_skill_validation": "passed",
+  "python_compile": "passed",
+  "synthetic_regression_tests": {
+    "passed": 5,
+    "failed": 0,
+    "covered": [
+      "constant-rate frame indices",
+      "variable-rate real timestamps and sampling window",
+      "decoded audio preservation",
+      "non-overwrite",
+      "invalid input rejection"
+    ]
+  },
+  "independent_forward_test": "passed; added hard-requirement negotiation and four-second frame-grid example",
+  "actual_h3_video_inference": "not_run",
+  "actual_flux_image_inference": "not_run",
+  "cross_assistant_runtime_execution": "not_run",
+  "files": [
+    "comfyui-reframe-continuity/SKILL.md",
+    "comfyui-reframe-continuity/agents/openai.yaml",
+    "comfyui-reframe-continuity/references/continuity-record.md",
+    "comfyui-reframe-continuity/references/h3-comfyui.md",
+    "comfyui-reframe-continuity/references/image-adapters.md",
+    "comfyui-reframe-continuity/references/portability.md",
+    "comfyui-reframe-continuity/references/validation.md",
+    "comfyui-reframe-continuity/scripts/sample_video.py",
+    "comfyui-reframe-continuity/scripts/test_sample_video.py"
+  ]
+}

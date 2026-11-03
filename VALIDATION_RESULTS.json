@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "case": "seated_match640",
+      "seconds_send_to_history": 344.3007243999998,
+      "sampled_peak_gpu_mib": 12902,
+      "sample_interval_seconds": 5,
+      "status": "success",
+      "execution_seconds": 338.989
+    },
+    {
+      "case": "seated_max640",
+      "seconds_send_to_history": 344.36998730000005,
+      "sampled_peak_gpu_mib": 12406,
+      "sample_interval_seconds": 5,
+      "status": "success",
+      "execution_seconds": 338.129
+    },
+    {
+      "case": "seated_max800",
+      "seconds_send_to_history": 375.0217253999999,
+      "sampled_peak_gpu_mib": 12433,
+      "sample_interval_seconds": 5,
+      "status": "success",
+      "execution_seconds": 369.459
+    },
+    {
+      "case": "seated_max960",
+      "seconds_send_to_history": 390.2987939999998,
+      "sampled_peak_gpu_mib": 12427,
+      "sample_interval_seconds": 5,
+      "status": "success",
+      "execution_seconds": 383.858
+    },
+    {
+      "case": "bridge_max800",
+      "seconds_send_to_history": 359.44346879999966,
+      "sampled_peak_gpu_mib": 12638,
+      "status": "success",
+      "execution_seconds": 354.577
+    }
+  ],
+  "gpu": "RTX5070Ti16GB",
+  "measurement_limits": "Global nvidia-smi samples every5s, not exact Torch peak. Single run per case; model loading and caches affect timing.",
+  "original_reference_separate_from_anchor": true,
+  "camera_node_full_inference": "Enabled in all seated cases; bridge kept original prompt for comparison.",
+  "final_builder_matches_completed_max800": "See BUILDER_EQUIVALENCE.json",
+  "browser_interactive_acceptance": false,
+  "picker_logic": "Seven presets, numeric controls, editable instruction and schematic checked in DOM harness",
+  "quality": "max improved some detail;960 was stable but not uniformly sharper than800 and altered expressions/pose. Hand clipping and bridge arm timing faults remain.",
+  "default_example": "800x480/max;960x576/max available as tested option, not hardware maximum",
+  "temporal_probe_limits": "Background luma changes only, not facial flicker or identity scoring.960 had larger but small absolute ceiling-luma fluctuations.",
+  "privacy": "No test media or personal paths included",
+  "release": "Private review candidate; no public submission or definitive code license"
+}

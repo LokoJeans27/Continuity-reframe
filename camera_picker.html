@@ -1,0 +1,52 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Elegir plano · H3 Camera Kit</title>
+<style>body{font:17px system-ui;background:#15191d;color:#edf1f3;max-width:850px;margin:50px auto;padding:0 22px}h1{font-size:36px}p{line-height:1.55;color:#c5d0d6}label{display:block;margin:22px 0 8px}select,textarea,button,input{font:inherit}select,textarea{box-sizing:border-box;width:100%;padding:12px;background:#242c32;color:white;border:1px solid #65747e;border-radius:8px}textarea{min-height:110px}button{padding:13px 20px;margin-top:18px;border:0;border-radius:8px;background:#baf3cd;cursor:pointer}pre{white-space:pre-wrap;background:#222b30;padding:18px;border-radius:8px}small{color:#b9c7ce}#status{color:#baf3cd}</style>
+<h1>Elige el próximo plano</h1><p>Esta ficha describe la imagen guía que crearás manualmente en ChatGPT o en otra herramienta. Los controles y el esquema afinan una intención. No transforman el video ni calculan una cámara exacta.</p>
+<label for="file">1. Abrir la ficha de escena del proyecto</label><input id="file" type="file" accept=".json,application/json"><p><small>Selecciona scene.template.json generado por prepare. El archivo se lee solo en este navegador; no se envía a un servidor.</small></p>
+<label for="shot">2. Elegir plano</label><select id="shot"><option value="front">Frontal</option><option value="three_quarter">Tres cuartos</option><option value="lateral">Lateral</option><option value="wide">Más abierto · margen para el gesto</option><option value="overhead">Cenital</option><option value="floor">Desde abajo</option><option value="rear">Espaldas</option></select>
+<label for="notes">3. Afinar la intención</label><textarea id="notes" placeholder="Ejemplo: desde el lado derecho del personaje, sin cortar la mano al señalar. Describe solo objetos que deberían verse."></textarea>
+<label>Azimut <output id="azout">0°</output></label><input id="az" type="range" min="-180" max="180" step="1" value="0" style="width:100%">
+<label>Elevación <output id="elout">0°</output></label><input id="el" type="range" min="-60" max="90" step="1" value="0" style="width:100%">
+<label>Distancia relativa <output id="distout">1</output></label><input id="dist" type="range" min="0.5" max="3" step="0.05" value="1" style="width:100%">
+<svg id="diagram" viewBox="0 0 500 230" width="100%" role="img" aria-label="Esquema conceptual de azimut y elevación"><circle cx="120" cy="110" r="78" fill="none" stroke="#60717c" stroke-dasharray="4 4"/><circle cx="120" cy="110" r="15" fill="#baf3cd"/><path d="M112 103 L120 89 L128 103" fill="#baf3cd"/><line id="ray" x1="120" y1="110" x2="120" y2="32" stroke="#9ccaff"/><circle id="cam" cx="120" cy="32" r="9" fill="#9ccaff"/><text x="40" y="215" fill="white">Vista superior · frente arriba</text><circle cx="370" cy="110" r="15" fill="#baf3cd"/><line id="side" x1="370" y1="110" x2="448" y2="110" stroke="#9ccaff"/><circle id="sidecam" cx="448" cy="110" r="9" fill="#9ccaff"/><text x="295" y="215" fill="white">Elevación · esquema</text></svg>
+<p><small>0° = frontal; +90° = lado derecho del personaje; 180° = espaldas. Elevación positiva mira hacia abajo. Distancia es una intención de encuadre, no metros ni focal. El esquema no reconstruye la escena.</small></p>
+<h2>Instrucción visible y editable</h2><textarea id="preview" style="min-height:180px"></textarea><button id="regenerate" type="button">Regenerar instrucción desde los controles</button><button id="save">Guardar nueva ficha de plano</button><p id="status" role="status"></p>
+<p>Después: comprueba qué objetos quedan dentro del encuadre, completa la actuación y sus tiempos, crea la guía y revísala. Al cambiar de cámara se reinician la visibilidad y las aprobaciones; no se puede ejecutar H3 hasta volver a revisarlas. Elige un nombre nuevo al guardar.</p>
+<script>
+'use strict';
+const choices={front:'Frontal camera view. Preserve the initial head/body pose and observed spatial relations. Specify height and framing from evidence.',three_quarter:'Three-quarter view. Specify which side and camera height. Change background perspective and occlusions coherently, not only actor orientation.',lateral:'Lateral camera view. Verify environment vanishing lines and occlusions. Hidden scene geometry is uncertain.',wide:'Wider view with space for the complete observed gesture. Preserve object positions; do not invent objects to fill empty space.',overhead:'True overhead view looking vertically down. Preserve source initial head/body pose; do not tilt the head toward the camera.',floor:'Low camera near the floor looking up. Decide visibility first; do not include objects outside this field of view.',rear:'View from behind the performer. Preserve anatomical gestures and lean. Face identity and lip motion may be unobservable.'};
+function makeSheet(scene,choice,notes){
+  if(!scene || !Array.isArray(scene.objects) || !Array.isArray(scene.acting))throw Error('La ficha necesita listas objects y acting del proyecto.');
+  const next=JSON.parse(JSON.stringify(scene));next.camera=choices[choice]+(notes.trim()?'\n'+notes.trim():'');next.camera_choice=choice;next.reviewed=false;next.guide_reviewed=false;
+  next.objects.forEach(o=>{o.visibility='unknown';o.uncertainty='Re-evaluate visibility from the new camera.'});
+  next.guide_review_notes='Create the guide manually, then review anatomy, initial pose, background perspective, occlusions and full gesture margin.';return next;
+}
+let scene=null;const $=id=>document.getElementById(id);
+const angles={front:[0,0,1],three_quarter:[45,0,1],lateral:[90,0,1],wide:[0,0,1.8],overhead:[0,90,1],floor:[0,-30,1],rear:[180,0,1]};
+function values(){return {azimuth:Number($('az').value),elevation:Number($('el').value),distance:Number($('dist').value)};}
+function instructionFromControls(){const v=values();
+ return 'Manual camera intention: azimuth '+v.azimuth+' degrees; elevation '+v.elevation+' degrees; relative distance '+v.distance+'. Interpret approximately through a manually reviewed guide, not exact geometry. Azimuth 0=front, +90=performer right, 180=rear; positive elevation looks down. Preserve source initial pose and gesture margin. Decide object visibility first.\n'+$('notes').value.trim();
+}
+let lastGenerated='',manualEdited=false;
+function preview(){
+ const manuallyEdited=manualEdited || $('preview').value!==lastGenerated;
+ const v=values();$('azout').textContent=v.azimuth+'°';$('elout').textContent=v.elevation+'°';$('distout').textContent=v.distance;
+ const a=v.azimuth*Math.PI/180,e=v.elevation*Math.PI/180,rad=45+v.distance*20;
+ const x=120+Math.sin(a)*rad,y=110-Math.cos(a)*rad,sx=370+Math.cos(e)*rad,sy=110-Math.sin(e)*rad;
+ $('cam').setAttribute('cx',x);$('cam').setAttribute('cy',y);$('ray').setAttribute('x2',x);$('ray').setAttribute('y2',y);$('sidecam').setAttribute('cx',sx);$('sidecam').setAttribute('cy',sy);$('side').setAttribute('x2',sx);$('side').setAttribute('y2',sy);
+ const generated=instructionFromControls();
+ if(!manuallyEdited){$('preview').value=generated;lastGenerated=generated;}
+ else {$('status').textContent='Tu instrucción editada se conserva. Los controles cambiaron; revisa el texto o pulsa Regenerar para reemplazarlo.';}
+ return generated;
+}
+function preset(){const v=angles[$('shot').value];$('az').value=v[0];$('el').value=v[1];$('dist').value=v[2];preview();}
+$('regenerate').addEventListener('click',()=>{
+ const edited=manualEdited || $('preview').value!==instructionFromControls();
+ if(edited && !window.confirm('¿Reemplazar tu instrucción editada por una nueva basada en los controles?'))return;
+ const generated=preview();$('preview').value=generated;lastGenerated=generated;manualEdited=false;
+ $('status').textContent='Instrucción regenerada desde los controles.';
+});
+$('preview').addEventListener('input',()=>{manualEdited=true;});
+$('shot').addEventListener('change',preset);$('notes').addEventListener('input',preview);for(const id of ['az','el','dist'])$(id).addEventListener('input',preview);
+$('file').addEventListener('change',async()=>{try{const f=$('file').files[0];if(!f)return;scene=JSON.parse(await f.text());makeSheet(scene,'front','');$('status').textContent='Ficha cargada. Elige y revisa el nuevo plano.';}catch(e){scene=null;$('status').textContent=e.message;}});
+$('save').addEventListener('click',()=>{try{const data=makeSheet(scene,$('shot').value,$('notes').value);data.camera=$('preview').value;data.camera_parameters=values();data.camera_parameters.semantic_only=true;data.camera_instruction_source=manualEdited || $('preview').value!==lastGenerated?'manual':'generated';data.camera_controls_match_instruction=$('preview').value===instructionFromControls();const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='scene-'+$('shot').value+'-'+Date.now()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),5000);$('status').textContent='Descarga solicitada. Revisa visibilidad y guía antes de ejecutar H3.';}catch(e){$('status').textContent=e.message;}});preview();
+</script></html>

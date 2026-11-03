@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "normalized_graph_matches_completed_max800": true,
+  "normalization": "Media paths replaced by actual byte hashes, output prefixes ignored. All other graph values equal.",
+  "new_inference_required_for_this_check": false,
+  "scope": "Final reusable build/attach implementation; full generation evidence belongs to run15 max800."
+}

@@ -1,0 +1,232 @@
+{
+  "file_count_including_inventory": 46,
+  "files_excluding_inventory": [
+    {
+      "path": "attach_camera.py",
+      "bytes": 3474,
+      "sha256": "ae0e7bd795e4d618726a2e425f0762d4ed093f907e3730cdb948786a35b8fbd5"
+    },
+    {
+      "path": "BUILDER_EQUIVALENCE.json",
+      "bytes": 360,
+      "sha256": "6617a28359cb0381604d4b705f8aeec8b0f5d9c4c335e900d7297d3833b8eb90"
+    },
+    {
+      "path": "camera_choices.json",
+      "bytes": 928,
+      "sha256": "aa18c4bdb953904d5a86d7be0e2b3bb60b3d731609a14410df9fa803b2c89df9"
+    },
+    {
+      "path": "camera_picker.html",
+      "bytes": 9168,
+      "sha256": "52776b2eca505da162a5dc48be9e21946f8db8b995e320ae052aef4ef224bacc"
+    },
+    {
+      "path": "choose_camera.py",
+      "bytes": 1370,
+      "sha256": "88cfdac5abcb95fe3e0702c1f72e7ef1ddf4ee81bbc54dbaabe5f783549b0eba"
+    },
+    {
+      "path": "cinema.py",
+      "bytes": 19341,
+      "sha256": "f70af1356fd53f2f44c0043b72a1f98f4cff0689724066edc07c9b46074fca25"
+    },
+    {
+      "path": "COMPARE_VALIDATION_26.json",
+      "bytes": 565,
+      "sha256": "d4e584663cceeeb8ce8f8d142e665c3491744ddcd64670780d28dc5c954e3838"
+    },
+    {
+      "path": "DEPENDENCY_NOTICES.en.md",
+      "bytes": 2569,
+      "sha256": "b3391bca8eb7fdb14f6ecb8a4bf9acdd2563fc2a7425e5a16579e1ad5d5f086a"
+    },
+    {
+      "path": "h3_camera_brief/__init__.py",
+      "bytes": 2739,
+      "sha256": "da7804c11298d7e77ac3e71e58c2500c5a201a2af6d54f3a9fe18e9185e21ca4"
+    },
+    {
+      "path": "LEEME_ES.md",
+      "bytes": 2064,
+      "sha256": "4f4bee42fea9416e3e88d5b0fe67e8c8ff5659f9c767307b9c9f5043b48953c0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1114,
+      "sha256": "a2b6fa562412d8b0de6557b6ffddcd759dab9473755ab38c9f7ed457001588eb"
+    },
+    {
+      "path": "MANUAL_GUIDE_STEP.md",
+      "bytes": 1272,
+      "sha256": "617ebb08a439d9c51032480aa44bceac57def62adbe7b0e0446cbc4fa09d5989"
+    },
+    {
+      "path": "MODEL_PROVENANCE.md",
+      "bytes": 5378,
+      "sha256": "5f6f3e04963d71d64cb50023282b9d85391425d07b04fa6de07c47da2aee688b"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/agents/openai.yaml",
+      "bytes": 292,
+      "sha256": "ef8207711c354bcdae75700fd160294ed43a4d3fcf27855f69e789bb65974868"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/references/continuity-record.md",
+      "bytes": 4235,
+      "sha256": "c3fd145e6a948b9c36a587c3bbf2a98c34c39c587fa9882a489b9dee0ffcdce5"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/references/h3-comfyui.md",
+      "bytes": 7515,
+      "sha256": "35fef64a3ae7ef07f1c943b7deb934faa248d9b4d6fdcf37d67b35bd09dd845a"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/references/image-adapters.md",
+      "bytes": 4247,
+      "sha256": "7946d32e0525712448411772f750ca2726297ef5a954f2f7b1b9ba1105fb5148"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/references/portability.md",
+      "bytes": 3588,
+      "sha256": "017a1b57955890103d2a47f3dfcae00ade753b9091a5497fd36e0eaf2526c2c0"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/references/validation.md",
+      "bytes": 4795,
+      "sha256": "1f44fdcc6f8db50b8284cc02b639249cc3b33d17c5ac05cf216c5942a5206079"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/scripts/sample_video.py",
+      "bytes": 10078,
+      "sha256": "0e16e35a9247ef9ba06bb67a47e4ae47176b3574e425afd2bd886a90f75ed12f"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/scripts/test_sample_video.py",
+      "bytes": 4780,
+      "sha256": "1658cc0a96bf75e876e6b8d12273e67f33459b2e4a22eb5e6a609c1405ab0ef0"
+    },
+    {
+      "path": "portable_skill/comfyui-reframe-continuity/SKILL.md",
+      "bytes": 8904,
+      "sha256": "fbb78cde47b5a31d54d6203074faad8d37478b7de0b4f07dd41c9f7f3bfde97c"
+    },
+    {
+      "path": "portable_skill/validation-results.json",
+      "bytes": 1292,
+      "sha256": "5be4980bfa27386d8d53a07edc0c5fba1e93f8f7bd9721ad68eb9d0a807aa0af"
+    },
+    {
+      "path": "QUICKSTART.md",
+      "bytes": 12943,
+      "sha256": "492bc66748cc1d4bcf2d152e0b5b1401a47b95e4377da063c9da3462bcf4ff51"
+    },
+    {
+      "path": "QUICKSTART_VALIDATION.json",
+      "bytes": 348,
+      "sha256": "f0d83e4fbd940a0be548b9967da6bdca0c947955bb68d4190bed48f9f948110b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 18055,
+      "sha256": "e7f145c652ddb26034d2518f09d4e9dc3a47ebfbe4574d5d7bf637925900c8e5"
+    },
+    {
+      "path": "RELEASE_STATUS.md",
+      "bytes": 1135,
+      "sha256": "b4020f3d122dfe155750d64b00b409b188dd1f2e411beda57dcda52b3daa32a2"
+    },
+    {
+      "path": "RELEASE_VALIDATION_23.json",
+      "bytes": 983,
+      "sha256": "14d7e3508e8360193c71242c3e5af106594ccfae1bbd754664116d141cdf986f"
+    },
+    {
+      "path": "RUNTIME_PROVENANCE.json",
+      "bytes": 2038,
+      "sha256": "dd9883e0a036b9b69b4a5f841c104413d51b0bc4d23b2b262f7163b4b7e18fa7"
+    },
+    {
+      "path": "scene.template.json",
+      "bytes": 802,
+      "sha256": "2f02e2dd3c9dc0af2999325cfda3936b8440b189aa7554d12705b07ff17672d5"
+    },
+    {
+      "path": "test_compare_pending.py",
+      "bytes": 1745,
+      "sha256": "6c8853adb718cbb9152247d7d724915c934ac8741360799fc03e5e580beb49e4"
+    },
+    {
+      "path": "test_contracts.py",
+      "bytes": 2574,
+      "sha256": "10503f71a8d9162777b83cc14c84684cb97e91b21c37286d5283c9e659c63c91"
+    },
+    {
+      "path": "test_final_options.py",
+      "bytes": 2480,
+      "sha256": "ad310c3bddb4c1b522c73c9697b59e1536ac2673eec13bcd983c063e3c9ca237"
+    },
+    {
+      "path": "test_resume_review.py",
+      "bytes": 2801,
+      "sha256": "609dd7693de010ec7e87e0112ddc78f4969c3914a3ff3c673137c4306a1fb73b"
+    },
+    {
+      "path": "test_symlink_collect.py",
+      "bytes": 1429,
+      "sha256": "a89a0d7daded2a1b08a72d10c384f8886f967f64b8d2fc928b257c71ce90c928"
+    },
+    {
+      "path": "tests/fixtures/camera_picker_before_fix.html",
+      "bytes": 7959,
+      "sha256": "41ec7ebbef0b392d844e3e19c4b0477d686ff85f961f9148983cdf20dd477ac7"
+    },
+    {
+      "path": "tests/test_current_controls.cjs",
+      "bytes": 2305,
+      "sha256": "d8adc38c7444ed467496d551109662fbda2974d19a317428ab8c832335215400"
+    },
+    {
+      "path": "tests/test_manual_text.cjs",
+      "bytes": 3287,
+      "sha256": "3a45a555abb216db0bfd5e1177b649988f99a13fe9758baa49eb05267263ebb6"
+    },
+    {
+      "path": "VALIDATION_RESULTS.json",
+      "bytes": 2332,
+      "sha256": "c4d42e1f40e847c600530e9ee716a0a9dd546815e8ac2d6552331275f7eaf0cf"
+    },
+    {
+      "path": "visual.py",
+      "bytes": 1970,
+      "sha256": "928458fd4270bf99de564b2d59be5263776d01784356a2c1feb94c65fbaa7b09"
+    },
+    {
+      "path": "WEIGHT_PROVENANCE.json",
+      "bytes": 9148,
+      "sha256": "63edd55261deb569b9f6f830fa882cd01db652135231cee0b0ac215b812b9a3e"
+    },
+    {
+      "path": "workflow.template.api.json",
+      "bytes": 4951,
+      "sha256": "d94b2db802cfebf5b88542356cb4a267e8cb5ed35dbbb62a1f039815baa00256"
+    },
+    {
+      "path": "workflow.visual.template.json",
+      "bytes": 26369,
+      "sha256": "2966f8322afc5c96fb8b773f226b6e90c6b30703aecff617c7d15a4e911e217e"
+    },
+    {
+      "path": "workflow.with_camera.template.api.json",
+      "bytes": 5296,
+      "sha256": "8f47f7b1478f2423a7af9ff26633841ead75542084870f39d09e9addf65e046c"
+    },
+    {
+      "path": "workflow.with_camera.template.visual.json",
+      "bytes": 27737,
+      "sha256": "737c4e15ab90654a1056439448a7af0151a88f80e508c89631536fca119c1928"
+    }
+  ],
+  "runtime_code_unchanged_from26B": true,
+  "documentation_checks": "required input at start; distinct attach directories; compare separated; current inventory references; scene/guide placement; no personal paths/media/credentials detected"
+}

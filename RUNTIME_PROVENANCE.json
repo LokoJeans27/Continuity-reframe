@@ -1,0 +1,49 @@
+{
+  "H3": {
+    "torch": "2.14.0.dev20260705+cu130",
+    "numpy": "2.4.6",
+    "opencv-python": "5.0.0.93",
+    "safetensors": "0.8.0",
+    "transformers": "5.13.0",
+    "sageattention": "2.2.0",
+    "comfy-kitchen": "0.2.31",
+    "comfyui-frontend-package": "1.49.6",
+    "comfy-aimdo": "0.4.15",
+    "triton-windows": "3.6.0.post26",
+    "comfy_git_head": "87465b8f1f64a27a46f16f22b13b410494dca66d",
+    "comfy_git_tracked_status": "D models/diffusers/put_diffusers_models_here\n D output/_output_images_will_be_put_here",
+    "native_h3_node_sha256": "769c9a1672d42418e99a4c16910381845be4d04992916b12763133f2e8bbffb6"
+  },
+  "FLUX": {
+    "python": "3.11.9",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.6",
+    "opencv-python": "unavailable",
+    "safetensors": "0.8.0",
+    "transformers": "5.20.0",
+    "comfy-kitchen": "0.2.37",
+    "comfyui-frontend-package": "1.55.17",
+    "comfy_git_head": "98cc0bf84b7cb1383654c5b402e7612d875d6d22",
+    "tracked_status": ""
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX5070Ti",
+    "memory_mib": 16303,
+    "driver_observed_at_audit": "610.88"
+  },
+  "system_ram": "approximately64GB;64977MiB reported by runtime",
+  "version_evidence": "Python/PyTorch/ComfyUI versions corroborated by trial logs; distribution versions and git HEAD measured after runs; not a complete lockfile",
+  "tracked_tree_notes": "H3 git status reports two absent placeholder files only; no tracked source modification shown. FLUX tracked tree clean. Untracked files not assessed as a full installation audit.",
+  "H3_launch_settings": [
+    "sage attention",
+    "cache-none",
+    "reserve-vram3",
+    "vram-headroom2",
+    "async weight offload2streams",
+    "automatic temp cleanup disabled in memory",
+    "audit hook blocks filesystem deletion",
+    "custom camera node in isolated runtime"
+  ],
+  "main_py_original_sha256_recorded_at_launch": "988f9e370288f6db027a85d4122993d363e12a995cb427fd05e2a699a04da5c7",
+  "fresh_install_reproduction": "not performed"
+}

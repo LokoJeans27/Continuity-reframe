@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "reviewed": false,
+  "guide_reviewed": false,
+  "subject": "Describe performer identity using visible evidence",
+  "camera": "Describe target position, direction and framing",
+  "camera_fixed": true,
+  "objects": [
+    {
+      "name": "example object",
+      "visibility": "unknown",
+      "relation": "Describe observed location without moving it",
+      "evidence_frames": [],
+      "uncertainty": "Not established"
+    }
+  ],
+  "acting": [
+    {
+      "start": 0,
+      "end": 3.75,
+      "action": "Describe source action and anatomical arm, gaze and timing"
+    }
+  ],
+  "guide_uncertainties": [
+    "Hidden geometry is not verified"
+  ],
+  "guide_review_notes": "Check posture, occlusions, frame margins and anatomy before accepting guide."
+}

@@ -1,0 +1,8 @@
+{
+  "doctor_existing_server": "passed: no missing nodes, four model files listed",
+  "command_flags": "checked against current CLI parser",
+  "model_names": "checked against workflow and provenance",
+  "fresh_install": "not performed",
+  "browser_visual_acceptance": "pending",
+  "inference": "not repeated for documentation-only revision"
+}

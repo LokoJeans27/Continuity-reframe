@@ -1,0 +1,27 @@
+{
+  "candidate": "23B",
+  "selector_regressions": [
+    "manual text preservation",
+    "cancel and accept regeneration",
+    "seven presets",
+    "comparison with freshly derived current instruction",
+    "restoring old generated text remains manual and stale",
+    "manual text equal to current instruction correctly matches",
+    "UTF-8 Spanish labels"
+  ],
+  "python_tests": {
+    "passed": 5,
+    "seconds": 0.031,
+    "includes_actual_matching_symlink_rejection": true,
+    "skipped": 0
+  },
+  "builder_options": "passed; original reference bytes and links retained",
+  "prior_contract_checks": 7,
+  "portable_skill_sampling_tests": 5,
+  "runtime_code_identical_to_tested_candidate23": true,
+  "interactive_browser_acceptance": "pending; browser/computer tool unavailable",
+  "paid_API_or_2K_test": "not performed; documentation only",
+  "publication": "not performed",
+  "project_license": "MIT authorized for project-authored code; see LICENSE",
+  "media_in_package": false
+}

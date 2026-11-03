@@ -1,0 +1,8 @@
+{
+  "three_quarter": "Three-quarter camera view. Decide the side and height from source evidence; check background vanishing lines and occlusions.",
+  "lateral": "Lateral camera view. Change the environment perspective coherently, not only the performer's orientation. Hidden geometry remains uncertain.",
+  "wide": "Wider camera view with enough margin for the complete observed hand gesture. Preserve object positions; do not invent visible objects to fill the frame.",
+  "overhead": "True overhead camera looking vertically down. Preserve the source initial head and body pose; do not tilt the head to face the camera.",
+  "floor": "Low camera near the floor looking up. Determine visibility before describing objects. Objects above or behind the camera may be out of frame.",
+  "rear": "Camera behind the performer. Face identity and lip motion may be unobservable. Do not invent a different body lean or action."
+}

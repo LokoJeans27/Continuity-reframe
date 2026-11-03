@@ -1,0 +1,13 @@
+{
+  "new_regressions_passed": 3,
+  "cases": [
+    "pending collection leaves no comparison folder",
+    "missing collected output rejected before folder creation",
+    "matching hash but undecodable video rejected"
+  ],
+  "completed_real_run_comparison": "passed using existing completed90frame output in a fresh private folder; source audio hash matched",
+  "new_H3_inference": false,
+  "doctor_check": "passed against existing server; all4models listed and no nodes missing",
+  "clean_install": "not tested",
+  "browser_visual_acceptance": "pending"
+}
