@@ -1,5 +1,5 @@
 {
-  "file_count_including_inventory": 65,
+  "file_count_including_inventory": 69,
   "scope": "Current Git blob bytes; excludes this inventory and .git metadata. Historical inventories describe their recorded versions only. Windows working-copy line endings may differ.",
   "files_excluding_inventory": [
     {
@@ -9,8 +9,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 22367,
-      "sha256": "68156869a9f3267fc8a5278007fed4942248f8014f290caeb60fba6617dc8f65"
+      "bytes": 23095,
+      "sha256": "cf3d3f45af3fbda7dd5be844fca28b0c3494289fe0b4efcf08df73632fd7af99"
     },
     {
       "path": "attach_camera.py",
@@ -59,8 +59,8 @@
     },
     {
       "path": "docs/DEPENDENCY_NOTICES.en.md",
-      "bytes": 2610,
-      "sha256": "ff19065bf87af32d88720d793e2545c1a390d3dfdc9a212008958219e7c86344"
+      "bytes": 2841,
+      "sha256": "31bcccfc64b47559faef19fa38d4d684c858905b2cc889330556a66d93cb3891"
     },
     {
       "path": "docs/LEEME_ES.md",
@@ -79,18 +79,23 @@
     },
     {
       "path": "docs/QUICKSTART.md",
-      "bytes": 13731,
-      "sha256": "eb0c9fdcc537736c5029f08a49f8e358ac305d7778de64f642e94f6d5878ebb6"
+      "bytes": 13809,
+      "sha256": "17860a2366470a0f6095d4b1b53b704f0eb75a123c02c08b3abb839a0fde54b1"
     },
     {
       "path": "docs/RELEASE_STATUS.md",
-      "bytes": 1799,
-      "sha256": "c1eef74a1f7d87c8ec7363aecb2b4fa284468abf83ab610c6df11c69611b1d9e"
+      "bytes": 1883,
+      "sha256": "770f1bbd3644f9a9e838a4858e35332c1307f592d9a43482114c179e93577bb9"
     },
     {
       "path": "docs/REPOSITORY_LAYOUT.md",
       "bytes": 2284,
       "sha256": "d82e978b8260741077922290a2e5b9a6e6941d2daf27d1e62ddccd8a1bf4309e"
+    },
+    {
+      "path": "docs/TUTORIAL.md",
+      "bytes": 3564,
+      "sha256": "83357571a78ac9acbd47128c9e63247239cd9d637accd12a48a08bd35e4ec0ed"
     },
     {
       "path": "docs/images/camera-controls.svg",
@@ -111,6 +116,16 @@
       "path": "docs/images/workflow.svg",
       "bytes": 3053,
       "sha256": "de9c520ec6a08f1502ea3d0eaf531b2310195cc99d2e60a12aa42361773e14e2"
+    },
+    {
+      "path": "docs/media/continuity-reframe-tutorial-en.mp4",
+      "bytes": 13026728,
+      "sha256": "9e0abe65560268632322f6ee81e67329e53568af8cd6d96a9496a0e518d6abc2"
+    },
+    {
+      "path": "docs/media/continuity-reframe-tutorial-en.srt",
+      "bytes": 3425,
+      "sha256": "b90928296939e518650f1c7eac0a32428455a19ef274ac53f066c8de40503586"
     },
     {
       "path": "evidence/PUBLICATION_MANIFEST.json",
@@ -171,6 +186,11 @@
       "path": "evidence/validation/REORGANIZATION_TESTS.json",
       "bytes": 2094,
       "sha256": "5691e26771cef57ed2a77bd76b55449e1156bb0e12c77a12836f8de1da9b3b1e"
+    },
+    {
+      "path": "evidence/validation/TUTORIAL.json",
+      "bytes": 1165,
+      "sha256": "772318cfec2cd0a87de9d7b962828059f0483ca00147587219bc919e40310029"
     },
     {
       "path": "evidence/validation/VALIDATION_RESULTS.json",

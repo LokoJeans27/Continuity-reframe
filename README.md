@@ -6,7 +6,13 @@ Start with [docs/QUICKSTART.md](docs/QUICKSTART.md) for an existing ComfyUI inst
 
 A local, reusable workflow for preparing a video, selecting a target camera intention, inserting a manually generated image guide and running H3 Ref2VA in ComfyUI. This is a published experimental release with the validation limits documented below; project-authored code is licensed under MIT (see LICENSE).
 
-## Repository organization
+## Narrated tutorial
+
+[Watch or download the English walkthrough](https://github.com/LokoJeans27/Continuity-reframe/raw/refs/heads/main/docs/media/continuity-reframe-tutorial-en.mp4) · [Subtitles](docs/media/continuity-reframe-tutorial-en.srt) · [Scope and recording notes](docs/TUTORIAL.md)
+
+Real selector and CLI interactions, with owner-authorized synthetic English narration, original music and an accelerated render wait. Image-guide creation remains external and manual. Added frame holds are labelled. This public edition explains local output review without embedding H3-generated result frames because of the model's territorial license restrictions. The tutorial is a viewing asset, not an executable source/guide pair.
+
+## Repository folders
 
 Code is in `src/continuity_reframe`, workflows in `workflows`, configuration in `configs`, and the selector in `ui`. Documentation, evidence and tests have separate folders. Existing root CLI commands remain supported. See [the folder guide](docs/REPOSITORY_LAYOUT.md).
 

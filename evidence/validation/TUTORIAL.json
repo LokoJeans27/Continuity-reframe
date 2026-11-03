@@ -1,0 +1,33 @@
+{
+  "file": "docs/media/continuity-reframe-tutorial-en.mp4",
+  "bytes": 13026728,
+  "sha256": "9e0abe65560268632322f6ee81e67329e53568af8cd6d96a9496a0e518d6abc2",
+  "format": {
+    "duration_s": 148.042,
+    "width": 1920,
+    "height": 1080,
+    "fps": 24.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "channels": 2
+  },
+  "decoded_frames": 3553,
+  "expected_frames": 3553,
+  "technical_checks_failed": 0,
+  "technical_checks_warnings": 1,
+  "loudness_lufs": -15.4,
+  "true_peak_dbtp": -1.8,
+  "captions": "Burned English captions plus separate SRT. No selectable subtitle stream in MP4. Phrase timing approximate.",
+  "visual_review": "16-frame contact sheet inspected; readable controls/cards and hold labels. No private desktop or filesystem paths in selected capture.",
+  "voice_review": "Selected local takes checked with offline automatic transcription; no perceptual voice-identity certification.",
+  "h3_output_images_in_this_tutorial": false,
+  "manual_guide_step": true,
+  "render_wait_speed": 44.2,
+  "render_submission_to_collection_seconds": 450.0383467,
+  "pilot_frames": 90,
+  "pilot_dimensions": [
+    800,
+    480
+  ],
+  "code_changed": false
+}

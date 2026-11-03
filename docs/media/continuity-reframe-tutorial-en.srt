@@ -1,0 +1,187 @@
+1
+00:00:00,300 --> 00:00:02,220
+Continuity Reframe.
+
+2
+00:00:02,220 --> 00:00:05,100
+A new shot.
+
+3
+00:00:05,100 --> 00:00:07,980
+An honest workflow.
+
+4
+00:00:08,883 --> 00:00:13,195
+Prepare your source video and inspect its frames.
+
+5
+00:00:13,195 --> 00:00:18,584
+This example is a short three point seven five second
+
+6
+00:00:18,584 --> 00:00:19,123
+pilot.
+
+7
+00:00:20,050 --> 00:00:25,088
+Choose a shot in the real camera selector.
+
+8
+00:00:25,088 --> 00:00:30,756
+The controls express intent, not exact three dimensional geometry.
+
+9
+00:00:30,756 --> 00:00:36,423
+Describe the framing and what must stay outside it.
+
+10
+00:00:36,423 --> 00:00:42,091
+The text is being entered in the actual interface.
+
+11
+00:00:42,091 --> 00:00:44,610
+Adjust the relative distance.
+
+12
+00:00:45,550 --> 00:00:49,317
+Review the instruction you can edit, and save a new
+
+13
+00:00:49,317 --> 00:00:50,070
+scene sheet.
+
+14
+00:00:51,008 --> 00:00:53,471
+Create the guide outside Comfy U I.
+
+15
+00:00:53,471 --> 00:00:56,637
+This tutorial reuses an existing external guide, imported manually.
+
+16
+00:00:56,637 --> 00:00:59,802
+The hidden anatomy and the room geometry are inferred.
+
+17
+00:00:59,802 --> 00:01:02,968
+No automatic Chat G P T integration is shown.
+
+18
+00:01:04,008 --> 00:01:05,694
+Review what the camera can see.
+
+19
+00:01:05,694 --> 00:01:08,223
+Keep objects outside the picture out of the guide.
+
+20
+00:01:08,223 --> 00:01:10,190
+Check the original arm movement over time.
+
+21
+00:01:10,190 --> 00:01:11,314
+Review the scene file.
+
+22
+00:01:11,314 --> 00:01:14,124
+Set both approval flags to true only after checking the
+
+23
+00:01:14,124 --> 00:01:15,248
+scene and the guide.
+
+24
+00:01:17,008 --> 00:01:17,445
+Build.
+
+25
+00:01:17,445 --> 00:01:17,882
+Submit.
+
+26
+00:01:17,882 --> 00:01:18,319
+Wait.
+
+27
+00:01:18,319 --> 00:01:18,756
+Collect.
+
+28
+00:01:18,756 --> 00:01:21,376
+This is real command line execution.
+
+29
+00:01:21,376 --> 00:01:23,997
+Build the run, then submit once.
+
+30
+00:01:23,997 --> 00:01:27,928
+Private file locations are hidden by the recording wrapper.
+
+31
+00:01:35,008 --> 00:01:37,764
+This is the real rendering wait, played forty four point
+
+32
+00:01:37,764 --> 00:01:38,591
+two times faster.
+
+33
+00:01:38,591 --> 00:01:41,346
+From submission to collection, it took four hundred and fifty
+
+34
+00:01:41,346 --> 00:01:42,448
+seconds on this PC.
+
+35
+00:01:45,008 --> 00:01:46,825
+Read the status in the terminal.
+
+36
+00:01:46,825 --> 00:01:49,248
+When it shows the word collected, run compare.
+
+37
+00:01:51,008 --> 00:01:53,606
+Open the generated video on your own computer.
+
+38
+00:01:53,606 --> 00:01:56,528
+The workflow keeps a version with the original audio.
+
+39
+00:01:58,008 --> 00:02:01,519
+Compare the original video with your guide and the result.
+
+40
+00:02:01,519 --> 00:02:04,328
+Check movement timing, face consistency, and the room.
+
+41
+00:02:04,328 --> 00:02:07,839
+Generated H three frames are not included in this public
+
+42
+00:02:07,839 --> 00:02:10,648
+tutorial because the model license has territorial restrictions.
+
+43
+00:02:11,550 --> 00:02:13,180
+Review the result.
+
+44
+00:02:13,180 --> 00:02:14,811
+Keep the evidence.
+
+45
+00:02:14,811 --> 00:02:18,615
+Check gesture timing, identity, and background geometry.
+
+46
+00:02:18,615 --> 00:02:23,506
+A sharper frame is not proof of faithful performance.
+
+47
+00:02:23,506 --> 00:02:27,310
+Guide creation and continuity review remain manual.

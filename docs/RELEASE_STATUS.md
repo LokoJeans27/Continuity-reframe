@@ -1,6 +1,6 @@
 # MIT release candidate27
 
-Project-authored code/documentation is MIT licensed as authorized by the owner. Third-party code, model weights and media retain their separate terms; no weights, executable source videos or standalone generation guides are bundled; owner-authorized illustrative demo stills are included. The source repository is now publicly available as an experimental release. Contest submission or acceptance has not been established.
+Project-authored code/documentation is MIT licensed as authorized by the owner. Third-party code, model weights and media retain their separate terms; no weights, executable source videos or standalone generation guides are bundled; owner-authorized illustrative demo stills and a narrated viewing tutorial are included. See TUTORIAL.md for scope and media license limits. The source repository is now publicly available as an experimental release. Contest submission or acceptance has not been established.
 
 Read docs/QUICKSTART.md first. It targets an existing working ComfyUI installation. Input requires audio and sufficient duration: approximately5.167s for default124frames at24fps. Doctor requires the server and CLI dependencies. The README separates compare from submission/collection and requires COLLECTED, uses distinct alternative attach-camera directories, and explains scene/guide file placement. compare preflight regressions and a completed-result comparison passed previously; code is unchanged in this revision.
 
