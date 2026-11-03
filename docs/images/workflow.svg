@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img">
+<title>Continuity Reframe | local workflow</title>
+<rect width="1200" height="540" rx="24" fill="#131d29"/>
+<text x="48" y="65" fill="#eef5ff" font-family="sans-serif" font-size="32">Continuity Reframe | local workflow</text>
+<text x="48" y="103" fill="#a8bdce" font-family="sans-serif" font-size="18">Numbered stages. Image creation and continuity review require manual intervention.</text>
+<rect x="48" y="145" width="350" height="145" rx="14" fill="#223449" stroke="#4e708c"/>
+<text x="66" y="179" fill="#a9efd0" font-family="sans-serif" font-size="21">1. Source video</text>
+<text x="66" y="215" fill="#eef5ff" font-family="sans-serif" font-size="17">Video with audio, continuous shot</text>
+<text x="66" y="246" fill="#c5d4e1" font-family="sans-serif" font-size="16">Sample frames and inspect timing</text>
+<rect x="423" y="145" width="350" height="145" rx="14" fill="#223449" stroke="#4e708c"/>
+<text x="441" y="179" fill="#a9efd0" font-family="sans-serif" font-size="21">2. Camera intention</text>
+<text x="441" y="215" fill="#eef5ff" font-family="sans-serif" font-size="17">Choose view and adjust controls</text>
+<text x="441" y="246" fill="#c5d4e1" font-family="sans-serif" font-size="16">Semantic instructions, not calibration</text>
+<rect x="798" y="145" width="350" height="145" rx="14" fill="#223449" stroke="#4e708c"/>
+<text x="816" y="179" fill="#a9efd0" font-family="sans-serif" font-size="21">3. Scene review</text>
+<text x="816" y="215" fill="#eef5ff" font-family="sans-serif" font-size="17">Visibility, objects and acting</text>
+<text x="816" y="246" fill="#c5d4e1" font-family="sans-serif" font-size="16">Record uncertainty and time ranges</text>
+<rect x="48" y="320" width="350" height="145" rx="14" fill="#223449" stroke="#4e708c"/>
+<text x="66" y="354" fill="#a9efd0" font-family="sans-serif" font-size="21">4. Manual image guide</text>
+<text x="66" y="390" fill="#eef5ff" font-family="sans-serif" font-size="17">Create in ChatGPT or another tool</text>
+<text x="66" y="421" fill="#c5d4e1" font-family="sans-serif" font-size="16">Inspect anatomy and perspective</text>
+<rect x="423" y="320" width="350" height="145" rx="14" fill="#223449" stroke="#4e708c"/>
+<text x="441" y="354" fill="#a9efd0" font-family="sans-serif" font-size="21">5. Local H3 Ref2VA</text>
+<text x="441" y="390" fill="#eef5ff" font-family="sans-serif" font-size="17">Build, submit and collect</text>
+<text x="441" y="421" fill="#c5d4e1" font-family="sans-serif" font-size="16">Requires existing models and server</text>
+<rect x="798" y="320" width="350" height="145" rx="14" fill="#223449" stroke="#4e708c"/>
+<text x="816" y="354" fill="#a9efd0" font-family="sans-serif" font-size="21">6. Compare and review</text>
+<text x="816" y="390" fill="#eef5ff" font-family="sans-serif" font-size="17">Source / guide / generated result</text>
+<text x="816" y="421" fill="#c5d4e1" font-family="sans-serif" font-size="16">Check motion, background and audio</text>
+</svg>

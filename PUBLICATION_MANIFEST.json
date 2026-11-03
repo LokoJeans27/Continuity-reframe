@@ -2,9 +2,9 @@
   "source_candidate": "27",
   "source_inventory": "INVENTORY_27.json",
   "publication_mode": "new files only; remote LICENSE and existing history preserved",
-  "remote_license_sha256": "0eec51c4e3a8beccace0de08424d3e5d3dd1f8d7ade460e5d79d54d71afd1b5b",
+  "remote_license_sha256": "a92c9769ab73601126e621cc6938005f057a8b0e9fdbd2958cd8a062ac2db8d1",
   "source_candidate_license_sha256": "a2b6fa562412d8b0de6557b6ffddcd759dab9473755ab38c9f7ed457001588eb",
-  "license_note": "The candidate inventory records its original generic-contributors LICENSE. The repository retains the preexisting owner-created MIT LICENSE with copyright LokoJeans27 instead; this is intentional and does not overwrite either original. All other candidate file bytes match the source inventory.",
+  "license_note": "The repository retains its preexisting owner-created MIT LICENSE. INVENTORY_27.json now records current repository blob bytes, including that LICENSE and subsequent documentation updates; it is not the original candidate ZIP inventory.",
   "added_candidate_files": [
     "BUILDER_EQUIVALENCE.json",
     "COMPARE_VALIDATION_26.json",
@@ -51,5 +51,6 @@
     "workflow.visual.template.json",
     "workflow.with_camera.template.api.json",
     "workflow.with_camera.template.visual.json"
-  ]
+  ],
+  "inventory_scope": "Current repository Git blob bytes, excluding INVENTORY_27.json itself and .git metadata."
 }

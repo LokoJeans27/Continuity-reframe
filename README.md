@@ -6,6 +6,14 @@ Start with [QUICKSTART.md](QUICKSTART.md) for an existing ComfyUI installation: 
 
 A local, reusable workflow for preparing a video, selecting a target camera intention, inserting a manually generated image guide and running H3 Ref2VA in ComfyUI. This is a published experimental release with the validation limits documented below; project-authored code is licensed under MIT (see LICENSE).
 
+## Visual reference
+
+![Six stages of the local workflow](docs/images/workflow.svg)
+
+![Conceptual reference for camera controls](docs/images/camera-controls.svg)
+
+These technical diagrams contain no source footage or private images. Open `camera_picker.html` for the actual interactive selector. Camera controls describe an intention; they do not reconstruct exact scene geometry.
+
 ## What happens where
 
 1. **CLI:** extract frames, prepare video/audio and create a scene sheet.
@@ -87,11 +95,13 @@ python -B test_resume_review.py
 python -B test_symlink_collect.py
 python -B test_contracts.py
 python -B test_final_options.py
+python -B test_compare_pending.py
+python -B portable_skill/comfyui-reframe-continuity/scripts/test_sample_video.py
 ```
 
 Tests create new retained temporary folders; nothing is deleted. Set TEMP/TMP to a writable directory if the environment redirects them. A packaging allowlist and text-pattern audit exclude media, weights, personal absolute paths and credential patterns; generated project folders require their own audit before sharing.
 
-The owner authorized MIT for this project code; see LICENSE. No repository, form or public demo has been submitted. Documentation is a review candidate, not a grant of model or footage rights.
+The owner authorized MIT for this project code; see LICENSE. This repository is publicly available as an experimental release. Contest form submission, acceptance and a public media demo are not established by this release. Documentation does not grant model or footage rights.
 
 ## Tested machine and measured results
 
@@ -124,7 +134,7 @@ Both review flags require literal JSON true. Collection can resume after one out
 
 ## Publication status and licenses
 
-Prepared for owner review, not published. The owner authorized MIT for project-authored code; see LICENSE. No model or footage license is replaced by it. Model and footage rights are separate. The [H3 Community License](https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE) excludes the EU, UK, Republic of Korea and USA from its applicable territory; verify applicable authorization and distribution terms. The FLUX weights use their own [FLUX Kommunity License](https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md), not the inference-code license. No weights, private media, credentials or personal paths are bundled. Public example rights are not established by a successful private test.
+Published as an experimental release; validation limitations remain. The owner authorized MIT for project-authored code; see LICENSE. No model or footage license is replaced by it. Model and footage rights are separate. The [H3 Community License](https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE) excludes the EU, UK, Republic of Korea and USA from its applicable territory; verify applicable authorization and distribution terms. The FLUX weights use their own [FLUX Kommunity License](https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md), not the inference-code license. No weights, private media, credentials or personal paths are bundled. Public example rights are not established by a successful private test.
 
 Final inventories and regression evidence are in INVENTORY_27.json and RELEASE_VALIDATION_23.json. Interactive browser/canvas acceptance remains pending. Prior standalone reports are historical evidence rather than a new acceptance claim.
 
@@ -147,3 +157,5 @@ The four H3 weights total approximately34.03GB (decimal); the three optional FLU
 FLUX downloads may require Hugging Face login and explicit acceptance/access approval on the official repository. Anonymous download requests may return401 even when an artifact exists; that is not evidence of a hash mismatch. No credentials, access acceptance or automatic download are included. Follow the distributor's normal access flow only if you elect to use FLUX.
 
 The H3 artifact's published capitalization differs from the expected lowercase filename in the table. Make a new correctly named copy from the downloaded original. On a case-insensitive filesystem, if the alternate capitalization already occupies the destination, do not overwrite it: use a fresh configured model-search directory and copy the expected name there. Verify the server lists the exact expected name before build. Existing originals remain untouched.
+
+SageAttention 2.2.0 describes the existing tested environment. Its release artifacts are distributed through the upstream [GitHub releases](https://github.com/thu-ml/SageAttention/releases); do not assume that `pip install sageattention==2.2.0` from PyPI reproduces that environment. This kit does not install it or certify a clean setup.

@@ -1,6 +1,6 @@
 # Dependencies and attribution
 
-This is a private review candidate. No model weights, binaries, private videos, credentials or personal paths are bundled. Project-authored code is MIT licensed; see LICENSE. Upstream components and weights retain their own terms.
+This is a published experimental release. No model weights, binaries, private videos, credentials or personal paths are bundled. Project-authored code is MIT licensed; see LICENSE. Upstream components and weights retain their own terms.
 
 The local validation environment used Python 3.13.12, NumPy 2.4.6, OpenCV 5.0.0, FFmpeg/ffprobe 8.1.1, ComfyUI 0.34.3 and frontend 1.49.6 on RTX 5070 Ti 16 GB. These are observed versions, not a universal lockfile. The CLI requires numpy and cv2 plus ffmpeg/ffprobe on PATH. It does not start or install ComfyUI.
 

@@ -1,15 +1,91 @@
 {
-  "file_count_including_inventory": 46,
+  "file_count_including_inventory": 49,
+  "scope": "Git repository blob bytes; excludes this inventory and .git metadata. Windows checkout line endings may differ.",
   "files_excluding_inventory": [
-    {
-      "path": "attach_camera.py",
-      "bytes": 3474,
-      "sha256": "ae0e7bd795e4d618726a2e425f0762d4ed093f907e3730cdb948786a35b8fbd5"
-    },
     {
       "path": "BUILDER_EQUIVALENCE.json",
       "bytes": 360,
       "sha256": "6617a28359cb0381604d4b705f8aeec8b0f5d9c4c335e900d7297d3833b8eb90"
+    },
+    {
+      "path": "COMPARE_VALIDATION_26.json",
+      "bytes": 565,
+      "sha256": "d4e584663cceeeb8ce8f8d142e665c3491744ddcd64670780d28dc5c954e3838"
+    },
+    {
+      "path": "DEPENDENCY_NOTICES.en.md",
+      "bytes": 2575,
+      "sha256": "d92ada21d98c50f1aff37a5c44d67e323ee0eef0920326ab729932591dd244b2"
+    },
+    {
+      "path": "LEEME_ES.md",
+      "bytes": 2064,
+      "sha256": "4f4bee42fea9416e3e88d5b0fe67e8c8ff5659f9c767307b9c9f5043b48953c0"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "a92c9769ab73601126e621cc6938005f057a8b0e9fdbd2958cd8a062ac2db8d1"
+    },
+    {
+      "path": "MANUAL_GUIDE_STEP.md",
+      "bytes": 1272,
+      "sha256": "617ebb08a439d9c51032480aa44bceac57def62adbe7b0e0446cbc4fa09d5989"
+    },
+    {
+      "path": "MODEL_PROVENANCE.md",
+      "bytes": 5378,
+      "sha256": "5f6f3e04963d71d64cb50023282b9d85391425d07b04fa6de07c47da2aee688b"
+    },
+    {
+      "path": "PUBLICATION_MANIFEST.json",
+      "bytes": 2578,
+      "sha256": "b5270afdee3deb49ade8426da8100f5b7ac0f67fc382d68e86f9da25cdea0a50"
+    },
+    {
+      "path": "QUICKSTART.md",
+      "bytes": 12943,
+      "sha256": "492bc66748cc1d4bcf2d152e0b5b1401a47b95e4377da063c9da3462bcf4ff51"
+    },
+    {
+      "path": "QUICKSTART_VALIDATION.json",
+      "bytes": 348,
+      "sha256": "f0d83e4fbd940a0be548b9967da6bdca0c947955bb68d4190bed48f9f948110b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 19030,
+      "sha256": "cd4a90f664dc9a1c5b45e983628b67744893c997180de3d7bf1b736de743fa7e"
+    },
+    {
+      "path": "RELEASE_STATUS.md",
+      "bytes": 1146,
+      "sha256": "fb2d3ab1ad622baa600b1c637fb910c5c2d79040e6e802e563ac6116b5c510f1"
+    },
+    {
+      "path": "RELEASE_VALIDATION_23.json",
+      "bytes": 983,
+      "sha256": "14d7e3508e8360193c71242c3e5af106594ccfae1bbd754664116d141cdf986f"
+    },
+    {
+      "path": "RUNTIME_PROVENANCE.json",
+      "bytes": 2038,
+      "sha256": "dd9883e0a036b9b69b4a5f841c104413d51b0bc4d23b2b262f7163b4b7e18fa7"
+    },
+    {
+      "path": "VALIDATION_RESULTS.json",
+      "bytes": 2332,
+      "sha256": "c4d42e1f40e847c600530e9ee716a0a9dd546815e8ac2d6552331275f7eaf0cf"
+    },
+    {
+      "path": "WEIGHT_PROVENANCE.json",
+      "bytes": 9148,
+      "sha256": "63edd55261deb569b9f6f830fa882cd01db652135231cee0b0ac215b812b9a3e"
+    },
+    {
+      "path": "attach_camera.py",
+      "bytes": 3474,
+      "sha256": "ae0e7bd795e4d618726a2e425f0762d4ed093f907e3730cdb948786a35b8fbd5"
     },
     {
       "path": "camera_choices.json",
@@ -32,14 +108,14 @@
       "sha256": "f70af1356fd53f2f44c0043b72a1f98f4cff0689724066edc07c9b46074fca25"
     },
     {
-      "path": "COMPARE_VALIDATION_26.json",
-      "bytes": 565,
-      "sha256": "d4e584663cceeeb8ce8f8d142e665c3491744ddcd64670780d28dc5c954e3838"
+      "path": "docs/images/camera-controls.svg",
+      "bytes": 2979,
+      "sha256": "28541580eeaf34275676fda5e96c8f86e173eef58e4acca6648010e577486de9"
     },
     {
-      "path": "DEPENDENCY_NOTICES.en.md",
-      "bytes": 2569,
-      "sha256": "b3391bca8eb7fdb14f6ecb8a4bf9acdd2563fc2a7425e5a16579e1ad5d5f086a"
+      "path": "docs/images/workflow.svg",
+      "bytes": 3053,
+      "sha256": "de9c520ec6a08f1502ea3d0eaf531b2310195cc99d2e60a12aa42361773e14e2"
     },
     {
       "path": "h3_camera_brief/__init__.py",
@@ -47,24 +123,9 @@
       "sha256": "da7804c11298d7e77ac3e71e58c2500c5a201a2af6d54f3a9fe18e9185e21ca4"
     },
     {
-      "path": "LEEME_ES.md",
-      "bytes": 2064,
-      "sha256": "4f4bee42fea9416e3e88d5b0fe67e8c8ff5659f9c767307b9c9f5043b48953c0"
-    },
-    {
-      "path": "LICENSE",
-      "bytes": 1114,
-      "sha256": "a2b6fa562412d8b0de6557b6ffddcd759dab9473755ab38c9f7ed457001588eb"
-    },
-    {
-      "path": "MANUAL_GUIDE_STEP.md",
-      "bytes": 1272,
-      "sha256": "617ebb08a439d9c51032480aa44bceac57def62adbe7b0e0446cbc4fa09d5989"
-    },
-    {
-      "path": "MODEL_PROVENANCE.md",
-      "bytes": 5378,
-      "sha256": "5f6f3e04963d71d64cb50023282b9d85391425d07b04fa6de07c47da2aee688b"
+      "path": "portable_skill/comfyui-reframe-continuity/SKILL.md",
+      "bytes": 8904,
+      "sha256": "fbb78cde47b5a31d54d6203074faad8d37478b7de0b4f07dd41c9f7f3bfde97c"
     },
     {
       "path": "portable_skill/comfyui-reframe-continuity/agents/openai.yaml",
@@ -107,44 +168,9 @@
       "sha256": "1658cc0a96bf75e876e6b8d12273e67f33459b2e4a22eb5e6a609c1405ab0ef0"
     },
     {
-      "path": "portable_skill/comfyui-reframe-continuity/SKILL.md",
-      "bytes": 8904,
-      "sha256": "fbb78cde47b5a31d54d6203074faad8d37478b7de0b4f07dd41c9f7f3bfde97c"
-    },
-    {
       "path": "portable_skill/validation-results.json",
       "bytes": 1292,
       "sha256": "5be4980bfa27386d8d53a07edc0c5fba1e93f8f7bd9721ad68eb9d0a807aa0af"
-    },
-    {
-      "path": "QUICKSTART.md",
-      "bytes": 12943,
-      "sha256": "492bc66748cc1d4bcf2d152e0b5b1401a47b95e4377da063c9da3462bcf4ff51"
-    },
-    {
-      "path": "QUICKSTART_VALIDATION.json",
-      "bytes": 348,
-      "sha256": "f0d83e4fbd940a0be548b9967da6bdca0c947955bb68d4190bed48f9f948110b"
-    },
-    {
-      "path": "README.md",
-      "bytes": 18055,
-      "sha256": "e7f145c652ddb26034d2518f09d4e9dc3a47ebfbe4574d5d7bf637925900c8e5"
-    },
-    {
-      "path": "RELEASE_STATUS.md",
-      "bytes": 1135,
-      "sha256": "b4020f3d122dfe155750d64b00b409b188dd1f2e411beda57dcda52b3daa32a2"
-    },
-    {
-      "path": "RELEASE_VALIDATION_23.json",
-      "bytes": 983,
-      "sha256": "14d7e3508e8360193c71242c3e5af106594ccfae1bbd754664116d141cdf986f"
-    },
-    {
-      "path": "RUNTIME_PROVENANCE.json",
-      "bytes": 2038,
-      "sha256": "dd9883e0a036b9b69b4a5f841c104413d51b0bc4d23b2b262f7163b4b7e18fa7"
     },
     {
       "path": "scene.template.json",
@@ -192,19 +218,9 @@
       "sha256": "3a45a555abb216db0bfd5e1177b649988f99a13fe9758baa49eb05267263ebb6"
     },
     {
-      "path": "VALIDATION_RESULTS.json",
-      "bytes": 2332,
-      "sha256": "c4d42e1f40e847c600530e9ee716a0a9dd546815e8ac2d6552331275f7eaf0cf"
-    },
-    {
       "path": "visual.py",
       "bytes": 1970,
       "sha256": "928458fd4270bf99de564b2d59be5263776d01784356a2c1feb94c65fbaa7b09"
-    },
-    {
-      "path": "WEIGHT_PROVENANCE.json",
-      "bytes": 9148,
-      "sha256": "63edd55261deb569b9f6f830fa882cd01db652135231cee0b0ac215b812b9a3e"
     },
     {
       "path": "workflow.template.api.json",
@@ -226,7 +242,5 @@
       "bytes": 27737,
       "sha256": "737c4e15ab90654a1056439448a7af0151a88f80e508c89631536fca119c1928"
     }
-  ],
-  "runtime_code_unchanged_from26B": true,
-  "documentation_checks": "required input at start; distinct attach directories; compare separated; current inventory references; scene/guide placement; no personal paths/media/credentials detected"
+  ]
 }
