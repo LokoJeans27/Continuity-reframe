@@ -1,5 +1,5 @@
 {
-  "file_count_including_inventory": 49,
+  "file_count_including_inventory": 51,
   "scope": "Git repository blob bytes; excludes this inventory and .git metadata. Windows checkout line endings may differ.",
   "files_excluding_inventory": [
     {
@@ -54,8 +54,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19030,
-      "sha256": "cd4a90f664dc9a1c5b45e983628b67744893c997180de3d7bf1b736de743fa7e"
+      "bytes": 19766,
+      "sha256": "a21ee8cb25869f5c70b3a5c12da817a4f19928287fcfeada7ca10132ce79eaee"
     },
     {
       "path": "RELEASE_STATUS.md",
@@ -111,6 +111,16 @@
       "path": "docs/images/camera-controls.svg",
       "bytes": 2979,
       "sha256": "28541580eeaf34275676fda5e96c8f86e173eef58e4acca6648010e577486de9"
+    },
+    {
+      "path": "docs/images/demo-gesture-result.jpg",
+      "bytes": 71602,
+      "sha256": "befe8a2795a75ed5d68c6a1fef8adc9b9a45550e7477f922940833d0b893d496"
+    },
+    {
+      "path": "docs/images/demo-inputs-guide-result.jpg",
+      "bytes": 69964,
+      "sha256": "880b32987b244abc4f772ae27c0346c65363ac3e72855f38836d540433a7bd62"
     },
     {
       "path": "docs/images/workflow.svg",

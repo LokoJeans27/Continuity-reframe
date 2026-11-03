@@ -14,6 +14,14 @@ A local, reusable workflow for preparing a video, selecting a target camera inte
 
 These technical diagrams contain no source footage or private images. Open `camera_picker.html` for the actual interactive selector. Camera controls describe an intention; they do not reconstruct exact scene geometry.
 
+## Frames from the published demo
+
+![Published demo: source video, manually created image guide and experimental H3 output](docs/images/demo-inputs-guide-result.jpg)
+
+![Published demo: the source and experimental output during an arm gesture](docs/images/demo-gesture-result.jpg)
+
+Frames at 38.000 s and 44.000 s from the owner-authorized [published demo](https://lnkd.in/p/ecCjd26T). These are snapshots of the earlier demonstration, including its original labels and limitations; they are not new benchmark results or proof of exact acting, identity or scene geometry. Only the seated demo is reproduced here. No third-party exterior footage is included. The manual image-generation step remains separate from the local H3 workflow.
+
 ## What happens where
 
 1. **CLI:** extract frames, prepare video/audio and create a scene sheet.
