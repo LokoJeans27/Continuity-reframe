@@ -1,4 +1,4 @@
-# H3 Camera Reference Kit — MIT release candidate27
+# H3 Camera Reference Kit — MIT release candidate
 
 **Input required:** one continuous video with audio and at least approximately 5.167 seconds available for the default 124-frame selection at 24 fps. Use the exact source interval described in QUICKSTART. A working local ComfyUI server, the four H3 weights, Python with NumPy/OpenCV, and FFmpeg/ffprobe are required before doctor. A clean installation has not been validated.
 
