@@ -2,7 +2,9 @@
 
 **Before starting:** provide a continuous video with an audio stream and at least approximately 5.167 seconds for the default124-frame clip at24fps. Have a working ComfyUI installation, four H3 weights, Python with NumPy/OpenCV and FFmpeg/ffprobe. Start the local server before doctor. This is not a clean-install certification.
 
-This guide is for someone who already has a working local ComfyUI installation and can run commands in a terminal. It is not a validated clean-install installer. No public example media or model weights are bundled. Use your own authorized video and check model-license eligibility before downloading or running weights. The first successful setup will require manual file placement and scene/guide review.
+This guide is for someone who already has a working local ComfyUI installation and can run commands in a terminal. It is not a validated clean-install installer. Owner-authorized illustrative demo stills are included in docs/images. No executable example videos, standalone generation guides or model weights are bundled. Use your own authorized video and check model-license eligibility before downloading or running weights. The first successful setup will require manual file placement and scene/guide review.
+
+**Historical GPU version warning:** the exact recorded PyTorch nightly is no longer found in the checked official index. The newly installed CLI has passed its tests, but full H3 inference on a newly installed alternative GPU stack is still pending. Read the installation-status section in README.md before choosing versions.
 
 ## 1. Check the two environments
 
@@ -19,7 +21,7 @@ ffprobe -version
 
 FFmpeg must support libx264, AAC, PNG decoding/encoding and WAV. The tested build was 8.1.1. Check with `ffmpeg -encoders`; if a binary is missing, obtain it through your normal approved installation process and ensure both commands are on PATH. No binary is installed by this kit.
 
-If Python imports fail, use a separate CLI virtual environment or your already managed environment. For a **new, isolated** Python 3.13 environment, the package versions used here can be installed with `python -m pip install numpy==2.4.6 opencv-python==5.0.0.93` after activating that environment. This is an optional dependency-install instruction, not something this package has executed or tested as a fresh installation. Do not run it against your ComfyUI Python blindly; do not replace its Torch/CUDA packages. Node.js is needed only for the JavaScript regression tests, not for inference or opening the selector.
+If Python imports fail, use a separate CLI virtual environment or your already managed environment. For a **new, isolated** Python 3.13 environment, the package versions used here can be installed with `python -m pip install numpy==2.4.6 opencv-python==5.0.0.93` after activating that environment. These exact NumPy/OpenCV versions were installed successfully in a new CPython 3.13.12 environment and passed the CLI tests. This verifies the CLI dependency installation, not a new GPU server or FFmpeg installation. Do not run it against your ComfyUI Python blindly; do not replace its Torch/CUDA packages. Node.js is needed only for the JavaScript regression tests, not for inference or opening the selector.
 
 ## 2. Place the four H3 model files
 

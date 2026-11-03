@@ -44,8 +44,8 @@
     },
     {
       "path": "QUICKSTART.md",
-      "bytes": 12943,
-      "sha256": "492bc66748cc1d4bcf2d152e0b5b1401a47b95e4377da063c9da3462bcf4ff51"
+      "bytes": 13466,
+      "sha256": "240777512f57b52d826f5ab3625d09f203d77f98b0dd97b473dd237671fb3f02"
     },
     {
       "path": "QUICKSTART_VALIDATION.json",
@@ -54,13 +54,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 19766,
-      "sha256": "a21ee8cb25869f5c70b3a5c12da817a4f19928287fcfeada7ca10132ce79eaee"
+      "bytes": 21205,
+      "sha256": "bbf0862fbb80bab1fda29731bcc45295b388694e83c2603e5e0b5298f5daf39c"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 1146,
-      "sha256": "fb2d3ab1ad622baa600b1c637fb910c5c2d79040e6e802e563ac6116b5c510f1"
+      "bytes": 1566,
+      "sha256": "6aa7cb637190d18da0b0c94f8b1cc34e612f6cc22024c1cdf5bc234461a2cb1b"
     },
     {
       "path": "RELEASE_VALIDATION_23.json",

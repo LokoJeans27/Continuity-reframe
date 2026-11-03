@@ -6,6 +6,14 @@ Start with [QUICKSTART.md](QUICKSTART.md) for an existing ComfyUI installation: 
 
 A local, reusable workflow for preparing a video, selecting a target camera intention, inserting a manually generated image guide and running H3 Ref2VA in ComfyUI. This is a published experimental release with the validation limits documented below; project-authored code is licensed under MIT (see LICENSE).
 
+## Installation status: historical GPU build unavailable
+
+The recorded `torch==2.14.0.dev20260705+cu130` is a **historical test environment**, not an installable recommendation. On 2026-11-03, the official CUDA 13.0 nightly index returned `No matching distribution found` for that exact Windows/Python 3.13 wheel. Do not blindly substitute another nightly or modify a working installation to match this record.
+
+**New CLI installation tested:** CPython 3.13.12 from its official NuGet distribution, NumPy 2.4.6 and opencv-python 5.0.0.93 from PyPI. The five kit test suites, five sampler tests, `pip check`, prepare and build passed. Doctor and collection/comparison used an existing server/job; existing FFmpeg was reused. This does not establish a clean H3 server installation.
+
+**Alternative under evaluation:** official PyTorch 2.13.0+cu130, torchvision 0.28.0+cu130 and torchaudio 2.11.0+cu130 installed in a separate environment. CUDA matrix multiplication, audio resampling, `pip check`, ComfyUI 0.34.3 startup and H3 node/model discovery passed on RTX 5070 Ti. Attention uses PyTorch, without SageAttention or Triton. **H3 generation in this new environment is not yet validated.** Existing model files are referenced, not downloaded again. See [official PyTorch packages](https://pytorch.org/get-started/previous-versions/) and [CPython NuGet documentation](https://docs.python.org/3.13/using/windows.html#the-nuget-org-packages).
+
 ## Visual reference
 
 ![Six stages of the local workflow](docs/images/workflow.svg)
