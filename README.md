@@ -12,7 +12,7 @@ The recorded `torch==2.14.0.dev20260705+cu130` is a **historical test environmen
 
 **New CLI installation tested:** CPython 3.13.12 from its official NuGet distribution, NumPy 2.4.6 and opencv-python 5.0.0.93 from PyPI. The five kit test suites, five sampler tests, `pip check`, prepare and build passed. Doctor and collection/comparison used an existing server/job; existing FFmpeg was reused. This does not establish a clean H3 server installation.
 
-**Alternative tested on one complete H3 run:** official PyTorch 2.13.0+cu130, torchvision 0.28.0+cu130 and torchaudio 2.11.0+cu130, with ComfyUI 0.34.3 and Python 3.13.12 in a separate package installation. On RTX 5070 Ti, the 124-frame, 800x480, max-reference run completed generation, collection and comparison in 587.1 seconds. The largest approximately 50-second VRAM sample was 12238 MiB; this is not an exact peak. Attention used PyTorch without SageAttention or Triton. Existing model files, driver and FFmpeg were reused; browser/canvas operation and fresh model acquisition remain untested. See [installation evidence](ISOLATED_ENVIRONMENT_TEST.json) and the [isolated package/setup steps](ALTERNATIVE_INSTALL.md).
+**Alternative tested on one complete H3 run:** official PyTorch 2.13.0+cu130, torchvision 0.28.0+cu130 and torchaudio 2.11.0+cu130, with ComfyUI 0.34.3 and Python 3.13.12 in a separate package installation. On RTX 5070 Ti, the 124-frame, 800x480, max-reference run took 587.1 seconds from submission to collection. Comparison was created afterward and is not included in that timing. The largest approximately 50-second VRAM sample was 12238 MiB; this is not an exact peak. Attention used PyTorch without SageAttention or Triton. Existing model files, driver and FFmpeg were reused; browser/canvas operation and fresh model acquisition remain untested. See [installation evidence](ISOLATED_ENVIRONMENT_TEST.json) and the [isolated package/setup steps](ALTERNATIVE_INSTALL.md).
 
 ## Visual reference
 
@@ -41,7 +41,7 @@ Frames at 38.000 s and 44.000 s from the owner-authorized [published demo](https
 
 ## Existing requirements
 
-Use an existing compatible ComfyUI installation with the four weights named in `workflow.template.api.json`, Python with NumPy/OpenCV, and FFmpeg/ffprobe on PATH. No binaries, models, private examples, credentials or installer are bundled. Start or reuse the active local server before running doctor; doctor also requires this Python environment and FFmpeg/ffprobe. Run doctor before inference. See `DEPENDENCY_NOTICES.en.md` for exact observed versions and upstream terms.
+Use an existing compatible ComfyUI installation with the four weights named in `workflow.template.api.json`, Python with NumPy/OpenCV, and FFmpeg/ffprobe on PATH. Owner-authorized illustrative demo stills are included. No executable example videos, standalone generation guides, binaries, models, credentials or installer are bundled. Start or reuse the active local server before running doctor; doctor also requires this Python environment and FFmpeg/ffprobe. Run doctor before inference. See `DEPENDENCY_NOTICES.en.md` for exact observed versions and upstream terms.
 
 ## Run with your own authorized footage
 
@@ -100,7 +100,7 @@ Higher resolution improved some facial detail in seated and bridge tests, but di
 
 Source must have audio. prepare reencodes to AAC and extracts WAV. Comparisons packet-copy prepared AAC and verify its hash, not the complete original recording; this is not lip-sync validation. Source-frame labels assume constant frame rate; exact VFR mapping and rotation-metadata handling are not validated. No automatic scene understanding, 3D reconstruction, retries, image provider calls or publishing.
 
-For a private demo: show the scene sheet and camera intent, manual image boundary, linked workflow, then one successful viewpoint and one concrete acting/framing failure. Seated, bridge and laboratory examples are not bundled. Public rights to private footage are not established. H3 territorial restrictions and third-party material terms still apply.
+For a private demo: show the scene sheet and camera intent, manual image boundary, linked workflow, then one successful viewpoint and one concrete acting/framing failure. Illustrative stills from the owner-authorized published seated demo are included above. Executable source videos and standalone generation guides for the seated, bridge and laboratory tests are not bundled. This authorization does not establish publication rights for other private footage. H3 territorial restrictions and third-party material terms still apply.
 
 ## Tests and release status
 
@@ -117,7 +117,7 @@ python -B portable_skill/comfyui-reframe-continuity/scripts/test_sample_video.py
 
 Tests create new retained temporary folders; nothing is deleted. Set TEMP/TMP to a writable directory if the environment redirects them. A packaging allowlist and text-pattern audit exclude media, weights, personal absolute paths and credential patterns; generated project folders require their own audit before sharing.
 
-The owner authorized MIT for this project code; see LICENSE. This repository is publicly available as an experimental release. Contest form submission, acceptance and a public media demo are not established by this release. Documentation does not grant model or footage rights.
+The owner authorized MIT for this project code; see LICENSE. This repository is publicly available as an experimental release. The owner has published the demo linked above and authorized its illustrative stills here. Contest form submission and acceptance are not established by this release. Documentation does not grant model or footage rights.
 
 ## Tested machine and measured results
 
