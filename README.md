@@ -4,7 +4,7 @@
 
 Start with [QUICKSTART.md](QUICKSTART.md) for an existing ComfyUI installation: prerequisites, model placement, server startup, manual guide preparation and an end-to-end command sequence. A clean installation has not been validated.
 
-A local, reusable workflow for preparing a video, selecting a target camera intention, inserting a manually generated image guide and running H3 Ref2VA in ComfyUI. This package is for review; nothing has been published and project-authored code is licensed under MIT (see LICENSE).
+A local, reusable workflow for preparing a video, selecting a target camera intention, inserting a manually generated image guide and running H3 Ref2VA in ComfyUI. This is a published experimental release with the validation limits documented below; project-authored code is licensed under MIT (see LICENSE).
 
 ## What happens where
 
