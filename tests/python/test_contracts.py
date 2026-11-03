@@ -1,7 +1,7 @@
 """Offline behavioral checks. Uses a new retained temporary directory; deletes nothing."""
 from pathlib import Path
 import sys,json,tempfile,copy
-ROOT=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT))
 import cinema,visual,choose_camera
 
@@ -18,8 +18,8 @@ def main():
     bad=copy.deepcopy(s);bad['objects'][0]['evidence_frames']=[];rejects(lambda:cinema.scene_prompt(bad,1));checks.append('Visible object without evidence rejected')
     bad=copy.deepcopy(s);bad['acting'][0]['end']=2;rejects(lambda:cinema.scene_prompt(bad,1));checks.append('Out-of-clip action rejected')
     q=r/'preserve.json';cinema.write(q,{'original':1});rejects(lambda:cinema.write(q,{'replacement':2}));assert cinema.read(q)=={'original':1};checks.append('Overwrite refused; original bytes preserved')
-    g=cinema.read(ROOT/'workflow.template.api.json');ui=visual.make_visual(g,cinema.read(ROOT/'workflow.visual.template.json'));assert visual.verify_visual(g,ui)==[]
+    g=cinema.read(ROOT/'workflows/workflow.template.api.json');ui=visual.make_visual(g,cinema.read(ROOT/'workflows/workflow.visual.template.json'));assert visual.verify_visual(g,ui)==[]
     broken=copy.deepcopy(ui);n=next(n for n in broken['nodes'] if n['id']==105);next(x for x in n['inputs'] if x['name']=='ref_images.ref_image_0')['link']=None;assert visual.verify_visual(g,broken);checks.append('Missing dynamic reference detected')
-    choices=cinema.read(ROOT/'camera_choices.json');changed=choose_camera.select(s,'rear',choices);assert not changed['reviewed'] and not changed['guide_reviewed'] and all(o['visibility']=='unknown' for o in changed['objects']);checks.append('Camera change invalidates previous visibility/review')
+    choices=cinema.read(ROOT/'configs/camera_choices.json');changed=choose_camera.select(s,'rear',choices);assert not changed['reviewed'] and not changed['guide_reviewed'] and all(o['visibility']=='unknown' for o in changed['objects']);checks.append('Camera change invalidates previous visibility/review')
     cinema.write(r/'results.json',{'passed':checks});print(json.dumps({'passed':checks,'retained_test_directory':str(r)},indent=2))
 if __name__=='__main__':main()

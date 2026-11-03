@@ -1,0 +1,68 @@
+{
+  "base_commit": "22c80734b841c6344edc361dbeca817ffabdda9b",
+  "purpose": "Folder reorganization with root CLI/import compatibility",
+  "test_suites": [
+    {
+      "test": "tests/python/test_compare_pending.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/python/test_contracts.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/python/test_final_options.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/python/test_layout.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/python/test_resume_review.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/python/test_symlink_collect.py",
+      "exit_code": 0
+    },
+    {
+      "test": "skills/comfyui-reframe-continuity/scripts/test_sample_video.py",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/js/test_manual_text.cjs",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/js/test_current_controls.cjs",
+      "exit_code": 0
+    }
+  ],
+  "real_media_checks": {
+    "commands": [
+      {
+        "command": "prepare",
+        "exit_code": 0
+      },
+      {
+        "command": "build",
+        "exit_code": 0
+      },
+      {
+        "command": "attach_camera passthrough",
+        "exit_code": 0
+      }
+    ],
+    "visual_api_links": "passed",
+    "generation": "Not rerun: structure/refactor only; real input build and graph links checked."
+  },
+  "doctor": "Attempted; connection refused because the previously started isolated server was no longer listening. No replacement server or GPU render started for this refactor.",
+  "limits": [
+    "No new GPU inference: workflow links and real-input build checked",
+    "Selector DOM logic and legacy redirect/link checked; interactive browser/canvas still unverified",
+    "External links to moved documentation/templates may need updating; root CLI and selector entry points retained"
+  ],
+  "privacy": "No source video, generated run, weights, credential or personal path included",
+  "preservation": "Original checkout and all temporary/test folders retained"
+}

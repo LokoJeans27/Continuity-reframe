@@ -1,7 +1,7 @@
 from pathlib import Path
 import tempfile,sys,unittest
 from types import SimpleNamespace
-ROOT=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT if (ROOT/'cinema.py').exists() else ROOT/'H3_CAMERA_KIT_QUICKSTART_26'))
 import cinema
 class ComparePreflight(unittest.TestCase):

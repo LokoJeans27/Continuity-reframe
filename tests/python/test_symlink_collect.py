@@ -2,7 +2,7 @@
 from pathlib import Path
 import sys,unittest
 from unittest.mock import patch
-ROOT=Path(__file__).resolve().parent;sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT))
 import cinema
 from test_resume_review import Regressions
 class SymlinkTests(unittest.TestCase):

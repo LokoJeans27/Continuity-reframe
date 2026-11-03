@@ -29,4 +29,4 @@ The original H3 download transaction was not found in the bounded prior-project 
 - [Official FLUX distribution](https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy): matching pinned image-model dependencies.
 - [H3 license](https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE) and [FLUX weight license](https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md) remain separate from this project code. This provenance report grants no model rights. Project-authored code is MIT licensed separately in LICENSE.
 
-The supplied package remains source/templates/documentation only. Machine names, user names, personal filesystem paths and private media are omitted. See RUNTIME_PROVENANCE.json for separate H3/FLUX environments and launch differences.
+The supplied package remains source/templates/documentation only. Machine names, user names, personal filesystem paths and private media are omitted. See evidence/provenance/RUNTIME_PROVENANCE.json for separate H3/FLUX environments and launch differences.

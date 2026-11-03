@@ -2,7 +2,7 @@
 from pathlib import Path
 import sys,tempfile,json,cv2,numpy as np
 from types import SimpleNamespace
-ROOT=Path(__file__).resolve().parent;sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT))
 import cinema,visual
 def main():
     root=Path(tempfile.mkdtemp(prefix='h3_final_options_'));project=root/'project';project.mkdir();inputs=root/'input';inputs.mkdir()

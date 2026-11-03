@@ -3,7 +3,7 @@ from pathlib import Path
 import sys,tempfile,unittest,json,copy
 from types import SimpleNamespace
 from unittest.mock import patch
-ROOT=Path(__file__).resolve().parent
+ROOT=Path(__file__).resolve().parents[2]
 if (ROOT/'cinema.py').exists():sys.path.insert(0,str(ROOT))
 else:sys.path.insert(0,str(ROOT/'H3_CAMERA_KIT_REVIEW_22'))
 import cinema

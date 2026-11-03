@@ -1,6 +1,6 @@
 # Quickstart: use an existing ComfyUI installation
 
-**Before starting:** provide a continuous video with an audio stream and at least approximately 5.167 seconds for the default124-frame clip at24fps. Have a working ComfyUI installation, four H3 weights, Python with NumPy/OpenCV and FFmpeg/ffprobe. Start the local server before doctor. A separately installed package/server test is documented in ALTERNATIVE_INSTALL.md; it reused existing weights, driver and FFmpeg.
+**Before starting:** provide a continuous video with an audio stream and at least approximately 5.167 seconds for the default124-frame clip at24fps. Have a working ComfyUI installation, four H3 weights, Python with NumPy/OpenCV and FFmpeg/ffprobe. Start the local server before doctor. A separately installed package/server test is documented in docs/ALTERNATIVE_INSTALL.md; it reused existing weights, driver and FFmpeg.
 
 This guide is for someone who already has a working local ComfyUI installation and can run commands in a terminal. It is not an automated from-zero installer. Owner-authorized illustrative demo stills are included in docs/images. No executable example videos, standalone generation guides or model weights are bundled. Use your own authorized video and check model-license eligibility before downloading or running weights. The first successful setup will require manual file placement and scene/guide review.
 
@@ -8,9 +8,9 @@ This guide is for someone who already has a working local ComfyUI installation a
 
 ## 1. Check the two environments
 
-**Video server:** existing ComfyUI with native MiniMax H3 nodes, matching GPU-capable PyTorch, four model files below and enough RAM/VRAM. The tested server used Windows, RTX 5070 Ti 16 GB, approximately 64 GB RAM, ComfyUI 0.34.3, PyTorch 2.14.0.dev20260705+cu130 and SageAttention 2.2.0. These versions describe a working existing environment; this package does not install or recreate it. Exact commits and launch differences are in RUNTIME_PROVENANCE.json. Do not upgrade/downgrade an existing installation merely to match a number here.
+**Video server:** existing ComfyUI with native MiniMax H3 nodes, matching GPU-capable PyTorch, four model files below and enough RAM/VRAM. The tested server used Windows, RTX 5070 Ti 16 GB, approximately 64 GB RAM, ComfyUI 0.34.3, PyTorch 2.14.0.dev20260705+cu130 and SageAttention 2.2.0. These versions describe a working existing environment; this package does not install or recreate it. Exact commits and launch differences are in evidence/provenance/RUNTIME_PROVENANCE.json. Do not upgrade/downgrade an existing installation merely to match a number here.
 
-**Kit commands:** Python with NumPy and OpenCV, plus FFmpeg and ffprobe on PATH. The tested CLI used Python 3.13.12, NumPy 2.4.6 and opencv-python 5.0.0.93. Open a terminal in the extracted kit folder. In all kit commands below, `python` means the interpreter with these dependencies; replace it with your actual interpreter command if needed. For example, in PowerShell an executable path containing spaces is invoked as `& "PATH_TO_PYTHON_EXE"`.
+**Kit commands:** Python with NumPy and OpenCV, plus FFmpeg and ffprobe on PATH. The tested CLI used Python 3.13.12, NumPy 2.4.6 and opencv-python 5.0.0.93. Open a terminal in the repository root (the folder containing cinema.py). In all kit commands below, `python` means the interpreter with these dependencies; replace it with your actual interpreter command if needed. For example, in PowerShell an executable path containing spaces is invoked as `& "PATH_TO_PYTHON_EXE"`.
 
 ```text
 python --version
@@ -25,7 +25,7 @@ If Python imports fail, use a separate CLI virtual environment or your already m
 
 ## 2. Place the four H3 model files
 
-MODEL_PROVENANCE.md contains pinned, hash-matched published artifact links. WEIGHT_PROVENANCE.json contains exact byte counts and SHA256. Obtain weights only after accepting applicable terms through the distributor's normal flow. This guide does not bypass access gates or download anything automatically.
+docs/MODEL_PROVENANCE.md contains pinned, hash-matched published artifact links. evidence/provenance/WEIGHT_PROVENANCE.json contains exact byte counts and SHA256. Obtain weights only after accepting applicable terms through the distributor's normal flow. This guide does not bypass access gates or download anything automatically.
 
 | ComfyUI model subdirectory | Filename expected by this kit |
 | --- | --- |
@@ -70,7 +70,7 @@ python -B cinema.py prepare --video YOUR_VIDEO.mp4 --out project-new --frames 12
 
 This creates `project-new/source.mp4`, audio.wav, project.json, sampled frames, a frame manifest, a contact sheet and scene.template.json. Inspect the actual frames and gesture timing.
 
-Open `camera_picker.html` in a local browser. Load `project-new/scene.template.json`, select a view, adjust controls and edit the instruction. Download a new scene sheet. Move that downloaded JSON into the kit folder as `scene-reviewed.json` using a new filename. Fill subject, camera, object visibility/evidence and timed acting entries; replace illustrative placeholders. Do not demand an object that should be outside the new field of view.
+Open `ui/camera_picker.html` in a local browser. Load `project-new/scene.template.json`, select a view, adjust controls and edit the instruction. Download a new scene sheet. Move that downloaded JSON into the kit folder as `scene-reviewed.json` using a new filename. Fill subject, camera, object visibility/evidence and timed acting entries; replace illustrative placeholders. Do not demand an object that should be outside the new field of view.
 
 Create the first-frame guide manually in ChatGPT, FLUX or another authorized tool. Save it as `guide.png` in the kit folder. Inspect posture, anatomy, props, room perspective and hand margin against the original frames. Only after review set both JSON fields `reviewed` and `guide_reviewed` to the boolean `true`, without quotation marks. They record a human review, not an automatic guarantee.
 
@@ -96,7 +96,7 @@ Expected: `run-new/comparison/comparison.mp4` with SOURCE / MANUAL GUIDE / H3 RE
 
 ## 6. Optional controls inside ComfyUI
 
-The core path above works without the custom camera node. The HTML selector already contributes the camera instruction to the scene and H3 prompt. If you also want the ComfyUI node, copy the new `h3_camera_brief` folder into that installation's custom_nodes folder without replacing an existing folder, then restart only when idle. No pip dependency is needed for this node. Restricted launchers must whitelist it. Follow README.md's `attach_camera.py` example and build with a matching reviewed guide; controls never create an image automatically.
+The core path above works without the custom camera node. The HTML selector already contributes the camera instruction to the scene and H3 prompt. If you also want the ComfyUI node, copy the new `custom_nodes/h3_camera_brief` folder into that installation's custom_nodes folder without replacing an existing folder, then restart only when idle. No pip dependency is needed for this node. Restricted launchers must whitelist it. Follow README.md's `attach_camera.py` example and build with a matching reviewed guide; controls never create an image automatically.
 
 For canvas editing, import the **built workflow.visual.json**, not the API graph or placeholder template. Refresh model/media lists. Browser/canvas interaction has not been visually accepted in this environment; API inference and offline selector logic were tested. A one-click clean installation is not claimed.
 

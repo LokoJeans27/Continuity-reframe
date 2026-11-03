@@ -2,9 +2,13 @@
 
 **Input required:** one continuous video with audio and at least approximately 5.167 seconds available for the default 124-frame selection at 24 fps. Use the exact source interval described in QUICKSTART. A working local ComfyUI server, the four H3 weights, Python with NumPy/OpenCV, and FFmpeg/ffprobe are required before doctor. A complete from-zero setup, including new model/FFmpeg acquisition and interactive UI, has not been validated.
 
-Start with [QUICKSTART.md](QUICKSTART.md) for an existing ComfyUI installation: prerequisites, model placement, server startup, manual guide preparation and an end-to-end command sequence. A complete from-zero setup, including new model/FFmpeg acquisition and interactive UI, has not been validated.
+Start with [docs/QUICKSTART.md](docs/QUICKSTART.md) for an existing ComfyUI installation: prerequisites, model placement, server startup, manual guide preparation and an end-to-end command sequence. A complete from-zero setup, including new model/FFmpeg acquisition and interactive UI, has not been validated.
 
 A local, reusable workflow for preparing a video, selecting a target camera intention, inserting a manually generated image guide and running H3 Ref2VA in ComfyUI. This is a published experimental release with the validation limits documented below; project-authored code is licensed under MIT (see LICENSE).
+
+## Repository organization
+
+Code is in `src/continuity_reframe`, workflows in `workflows`, configuration in `configs`, and the selector in `ui`. Documentation, evidence and tests have separate folders. Existing root CLI commands remain supported. See [the folder guide](docs/REPOSITORY_LAYOUT.md).
 
 ## Installation status: historical GPU build unavailable
 
@@ -12,7 +16,7 @@ The recorded `torch==2.14.0.dev20260705+cu130` is a **historical test environmen
 
 **New CLI installation tested:** CPython 3.13.12 from its official NuGet distribution, NumPy 2.4.6 and opencv-python 5.0.0.93 from PyPI. The five kit test suites, five sampler tests, `pip check`, prepare and build passed. Doctor and collection/comparison used an existing server/job; existing FFmpeg was reused. This does not establish a clean H3 server installation.
 
-**Alternative tested on one complete H3 run:** official PyTorch 2.13.0+cu130, torchvision 0.28.0+cu130 and torchaudio 2.11.0+cu130, with ComfyUI 0.34.3 and Python 3.13.12 in a separate package installation. On RTX 5070 Ti, the 124-frame, 800x480, max-reference run took 587.1 seconds from submission to collection. Comparison was created afterward and is not included in that timing. The largest approximately 50-second VRAM sample was 12238 MiB; this is not an exact peak. Attention used PyTorch without SageAttention or Triton. Existing model files, driver and FFmpeg were reused; browser/canvas operation and fresh model acquisition remain untested. See [installation evidence](ISOLATED_ENVIRONMENT_TEST.json) and the [isolated package/setup steps](ALTERNATIVE_INSTALL.md).
+**Alternative tested on one complete H3 run:** official PyTorch 2.13.0+cu130, torchvision 0.28.0+cu130 and torchaudio 2.11.0+cu130, with ComfyUI 0.34.3 and Python 3.13.12 in a separate package installation. On RTX 5070 Ti, the 124-frame, 800x480, max-reference run took 587.1 seconds from submission to collection. Comparison was created afterward and is not included in that timing. The largest approximately 50-second VRAM sample was 12238 MiB; this is not an exact peak. Attention used PyTorch without SageAttention or Triton. Existing model files, driver and FFmpeg were reused; browser/canvas operation and fresh model acquisition remain untested. See [installation evidence](evidence/validation/ISOLATED_ENVIRONMENT_TEST.json) and the [isolated package/setup steps](docs/ALTERNATIVE_INSTALL.md).
 
 ## Visual reference
 
@@ -20,7 +24,7 @@ The recorded `torch==2.14.0.dev20260705+cu130` is a **historical test environmen
 
 ![Conceptual reference for camera controls](docs/images/camera-controls.svg)
 
-These technical diagrams contain no source footage or private images. Open `camera_picker.html` for the actual interactive selector. Camera controls describe an intention; they do not reconstruct exact scene geometry.
+These technical diagrams contain no source footage or private images. Open `ui/camera_picker.html` for the actual interactive selector. Camera controls describe an intention; they do not reconstruct exact scene geometry.
 
 ## Frames from the published demo
 
@@ -41,7 +45,7 @@ Frames at 38.000 s and 44.000 s from the owner-authorized [published demo](https
 
 ## Existing requirements
 
-Use an existing compatible ComfyUI installation with the four weights named in `workflow.template.api.json`, Python with NumPy/OpenCV, and FFmpeg/ffprobe on PATH. Owner-authorized illustrative demo stills are included. No executable example videos, standalone generation guides, binaries, models, credentials or installer are bundled. Start or reuse the active local server before running doctor; doctor also requires this Python environment and FFmpeg/ffprobe. Run doctor before inference. See `DEPENDENCY_NOTICES.en.md` for exact observed versions and upstream terms.
+Use an existing compatible ComfyUI installation with the four weights named in `workflows/workflow.template.api.json`, Python with NumPy/OpenCV, and FFmpeg/ffprobe on PATH. Owner-authorized illustrative demo stills are included. No executable example videos, standalone generation guides, binaries, models, credentials or installer are bundled. Start or reuse the active local server before running doctor; doctor also requires this Python environment and FFmpeg/ffprobe. Run doctor before inference. See `docs/DEPENDENCY_NOTICES.en.md` for exact observed versions and upstream terms.
 
 ## Run with your own authorized footage
 
@@ -52,7 +56,7 @@ python -B cinema.py doctor --out doctor-new.json
 python -B cinema.py prepare --video YOUR_VIDEO.mp4 --out project-new --frames 124
 ```
 
-Open `camera_picker.html` locally. Load `project-new/scene.template.json`, choose frontal/three-quarter/lateral/wide/overhead/low/rear, refine the three controls and optional text, then save a new sheet. Move the downloaded scene-[view]-[timestamp].json into the kit folder under the new filename scene-reviewed.json, or pass its actual path to --scene. Complete visibility/evidence/action timing in that sheet. Generate and inspect `guide.png` manually and save it in the kit folder, or pass its actual path to --guide. Set `reviewed` and `guide_reviewed` true only after review.
+Open `ui/camera_picker.html` locally. Load `project-new/scene.template.json`, choose frontal/three-quarter/lateral/wide/overhead/low/rear, refine the three controls and optional text, then save a new sheet. Move the downloaded scene-[view]-[timestamp].json into the kit folder under the new filename scene-reviewed.json, or pass its actual path to --scene. Complete visibility/evidence/action timing in that sheet. Generate and inspect `guide.png` manually and save it in the kit folder, or pass its actual path to --guide. Set `reviewed` and `guide_reviewed` true only after review.
 
 ```text
 python -B cinema.py build --project project-new --scene scene-reviewed.json --guide guide.png --comfy-input COMFY_INPUT --out run-new --width 800 --height 480 --ref-image-size max
@@ -74,7 +78,7 @@ Default clip length is124 frames; H3 uses17k+5 at24fps. Earlier90-frame experime
 
 ## Optional ComfyUI camera node
 
-The HTML picker already puts the camera intention in the sheet and H3 prompt. For controls inside ComfyUI too, copy the new `h3_camera_brief` folder into that installation's custom_nodes directory and restart only when idle. Do not overwrite an existing folder. No pip install is needed; restricted launchers must whitelist the node. This package does not install it automatically.
+The HTML picker already puts the camera intention in the sheet and H3 prompt. For controls inside ComfyUI too, copy the new `custom_nodes/h3_camera_brief` folder into that installation's custom_nodes directory and restart only when idle. Do not overwrite an existing folder. No pip install is needed; restricted launchers must whitelist the node. This package does not install it automatically.
 
 ```text
 python -B attach_camera.py --run run-new --out run-with-controls-passthrough
@@ -92,7 +96,7 @@ Use `custom` for numeric refinements; named presets use fixed values. Azimuth0 i
 
 Import the **built** `workflow.visual.json`, not the API graph or placeholder template. Refresh the browser's node/media lists after staging inputs. Unique flat filenames avoid loader dropdowns missing files in subdirectories. Image/video/audio dynamic references and both VAEs are explicitly linked and structurally checked against the API graph.
 
-The optional camera node completed real H3 generation with controls enabled at640x384 and800x480. Both800x480 and960x576 completed successfully. See the measured-results table below and VALIDATION_RESULTS.json for earlier runs. Full end-to-end rendering was through the actual ComfyUI API. Interactive browser/canvas acceptance is still pending because computer-use tools were unavailable; HTML control logic and exported sheets were checked with a DOM harness. Do not advertise an accepted one-click browser experience.
+The optional camera node completed real H3 generation with controls enabled at640x384 and800x480. Both800x480 and960x576 completed successfully. See the measured-results table below and evidence/validation/VALIDATION_RESULTS.json for earlier runs. Full end-to-end rendering was through the actual ComfyUI API. Interactive browser/canvas acceptance is still pending because computer-use tools were unavailable; HTML control logic and exported sheets were checked with a DOM harness. Do not advertise an accepted one-click browser experience.
 
 ## Known limits and honest demo
 
@@ -105,14 +109,15 @@ For a private demo: show the scene sheet and camera intent, manual image boundar
 ## Tests and release status
 
 ```text
-node tests/test_manual_text.cjs
-node tests/test_current_controls.cjs
-python -B test_resume_review.py
-python -B test_symlink_collect.py
-python -B test_contracts.py
-python -B test_final_options.py
-python -B test_compare_pending.py
-python -B portable_skill/comfyui-reframe-continuity/scripts/test_sample_video.py
+node tests/js/test_manual_text.cjs
+node tests/js/test_current_controls.cjs
+python -B tests/python/test_resume_review.py
+python -B tests/python/test_symlink_collect.py
+python -B tests/python/test_contracts.py
+python -B tests/python/test_final_options.py
+python -B tests/python/test_compare_pending.py
+python -B tests/python/test_layout.py
+python -B skills/comfyui-reframe-continuity/scripts/test_sample_video.py
 ```
 
 Tests create new retained temporary folders; nothing is deleted. Set TEMP/TMP to a writable directory if the environment redirects them. A packaging allowlist and text-pattern audit exclude media, weights, personal absolute paths and credential patterns; generated project folders require their own audit before sharing.
@@ -152,11 +157,11 @@ Both review flags require literal JSON true. Collection can resume after one out
 
 Published as an experimental release; validation limitations remain. The owner authorized MIT for project-authored code; see LICENSE. No model or footage license is replaced by it. Model and footage rights are separate. The [H3 Community License](https://huggingface.co/MiniMaxAI/MiniMax-H3/raw/main/LICENSE) excludes the EU, UK, Republic of Korea and USA from its applicable territory; verify applicable authorization and distribution terms. The FLUX weights use their own [FLUX Kommunity License](https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md), not the inference-code license. No weights, private media, credentials or personal paths are bundled. Public example rights are not established by a successful private test.
 
-Final inventories and regression evidence are in INVENTORY_27.json and RELEASE_VALIDATION_23.json. Interactive browser/canvas acceptance remains pending. Prior standalone reports are historical evidence rather than a new acceptance claim.
+Final inventories and regression evidence are in evidence/INVENTORY.json and evidence/validation/RELEASE_VALIDATION_23.json. Interactive browser/canvas acceptance remains pending. Prior standalone reports are historical evidence rather than a new acceptance claim.
 
 ## Checkpoint provenance and separate image runtime
 
-See MODEL_PROVENANCE.md, WEIGHT_PROVENANCE.json and RUNTIME_PROVENANCE.json. Seven locally hashed files match size and SHA256 published by verified repository metadata: four H3 dependencies and three files used by the separate FLUX experiment. Revisions are pinned, not inferred from filenames. This verifies equivalent published bytes; it does not prove the original download route, reproduce the quantization process, grant redistribution rights or establish a clean-install reproduction.
+See docs/MODEL_PROVENANCE.md, evidence/provenance/WEIGHT_PROVENANCE.json and evidence/provenance/RUNTIME_PROVENANCE.json. Seven locally hashed files match size and SHA256 published by verified repository metadata: four H3 dependencies and three files used by the separate FLUX experiment. Revisions are pinned, not inferred from filenames. This verifies equivalent published bytes; it does not prove the original download route, reproduce the quantization process, grant redistribution rights or establish a clean-install reproduction.
 
 The H3 diffusion file matches the Abiray collection, with a different filename capitalization locally. Do not substitute another same-named NVFP4 file: one checked alternative has a different size/hash. The tested local diffusion file contains66 trailing bytes beyond its declared tensor data, also present in the matching published artifact. It was not modified. Compatibility with a different loader must be verified rather than silently truncating it.
 
@@ -164,7 +169,7 @@ FLUX image generation used a separate existing environment: Python3.11.9, PyTorc
 
 GPU: RTX5070Ti16GB, driver610.88 observed during provenance inspection,16303MiB reported. System RAM approximately64GB. No CPU serial, account, machine identifier or personal path is disclosed. Full runtime commit IDs, native H3 node hash, observed loader settings and evidence limits are recorded separately. H3 launch disabled automatic temporary cleanup in memory and used an audit hook to preserve files; these safeguards are not a stock ComfyUI setting. No weights were copied, changed, uploaded or bundled for this audit.
 
-INVENTORY_27.json is the current package inventory. Project-authored code is MIT licensed; see LICENSE. Browser/canvas interactive acceptance remains unverified.
+evidence/INVENTORY.json is the current package inventory. Project-authored code is MIT licensed; see LICENSE. Browser/canvas interactive acceptance remains unverified.
 
 ## Storage and optional FLUX access
 

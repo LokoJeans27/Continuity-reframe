@@ -13,11 +13,11 @@ Commands below use `python` to mean that new environment's interpreter. Use its 
 ```text
 python -m pip install --index-url https://pypi.org/simple --only-binary=:all: numpy==2.4.6 opencv-python==5.0.0.93
 python -m pip install --index-url https://download.pytorch.org/whl/cu130 --only-binary=:all: torch==2.13.0 torchvision==0.28.0
-python -m pip install --index-url https://pypi.org/simple --only-binary=:all: -c KIT/isolated-constraints.txt -r COMFY_SOURCE/requirements.txt https://download-r2.pytorch.org/whl/cu130/torchaudio-2.11.0%2Bcu130-cp313-cp313-win_amd64.whl
+python -m pip install --index-url https://pypi.org/simple --only-binary=:all: -c KIT/configs/isolated-constraints.txt -r COMFY_SOURCE/requirements.txt https://download-r2.pytorch.org/whl/cu130/torchaudio-2.11.0%2Bcu130-cp313-cp313-win_amd64.whl
 python -m pip check
 ```
 
-These are the package arguments used in the test. Additional local logging/report flags and a preservation wrapper retained installer temporary files. The first attempt's temporary-folder probe conflicted with that wrapper; specifying a new temporary directory explicitly resolved it. Normal pip may clean its own temporary files. No files were deleted in this trial. Full observed package versions are in ISOLATED_ENVIRONMENT_TEST.json; the constraints file fixes the core combination, not every transitive package.
+These are the package arguments used in the test. Additional local logging/report flags and a preservation wrapper retained installer temporary files. The first attempt's temporary-folder probe conflicted with that wrapper; specifying a new temporary directory explicitly resolved it. Normal pip may clean its own temporary files. No files were deleted in this trial. Full observed package versions are in evidence/validation/ISOLATED_ENVIRONMENT_TEST.json; the constraints file fixes the core combination, not every transitive package.
 
 ## Separate server
 

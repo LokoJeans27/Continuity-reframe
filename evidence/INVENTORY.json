@@ -1,0 +1,326 @@
+{
+  "file_count_including_inventory": 65,
+  "scope": "Current Git blob bytes; excludes this inventory and .git metadata. Historical inventories describe their recorded versions only. Windows working-copy line endings may differ.",
+  "files_excluding_inventory": [
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "a92c9769ab73601126e621cc6938005f057a8b0e9fdbd2958cd8a062ac2db8d1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 22367,
+      "sha256": "68156869a9f3267fc8a5278007fed4942248f8014f290caeb60fba6617dc8f65"
+    },
+    {
+      "path": "attach_camera.py",
+      "bytes": 313,
+      "sha256": "437f6348d221cc6970a1bfbff9f83a1b498e61b556d7626350f94b362f8d55db"
+    },
+    {
+      "path": "camera_picker.html",
+      "bytes": 250,
+      "sha256": "a9a72eb0d1f460234f1ac3e26c35a4175c751abf690548c049baa7b33067ddce"
+    },
+    {
+      "path": "choose_camera.py",
+      "bytes": 313,
+      "sha256": "698411dc153bd29f7a466cd95b943c074af51ec37d111f469e415894cb519945"
+    },
+    {
+      "path": "cinema.py",
+      "bytes": 306,
+      "sha256": "e9c85e3f56f6b23f7508548d34ef0bf033fc9a9bb516c0cc8fb7c1a77b3907b6"
+    },
+    {
+      "path": "configs/camera_choices.json",
+      "bytes": 928,
+      "sha256": "aa18c4bdb953904d5a86d7be0e2b3bb60b3d731609a14410df9fa803b2c89df9"
+    },
+    {
+      "path": "configs/isolated-constraints.txt",
+      "bytes": 123,
+      "sha256": "4a2a11d632049fc01ff72fd39222d82e03b2593d33a8645196ecb378cbdefa39"
+    },
+    {
+      "path": "configs/scene.template.json",
+      "bytes": 802,
+      "sha256": "2f02e2dd3c9dc0af2999325cfda3936b8440b189aa7554d12705b07ff17672d5"
+    },
+    {
+      "path": "custom_nodes/h3_camera_brief/__init__.py",
+      "bytes": 2739,
+      "sha256": "da7804c11298d7e77ac3e71e58c2500c5a201a2af6d54f3a9fe18e9185e21ca4"
+    },
+    {
+      "path": "docs/ALTERNATIVE_INSTALL.md",
+      "bytes": 3988,
+      "sha256": "2462fdea9787500e289666f592e5fa2d771cf9c6b25fe8fd994c60200c382aee"
+    },
+    {
+      "path": "docs/DEPENDENCY_NOTICES.en.md",
+      "bytes": 2610,
+      "sha256": "ff19065bf87af32d88720d793e2545c1a390d3dfdc9a212008958219e7c86344"
+    },
+    {
+      "path": "docs/LEEME_ES.md",
+      "bytes": 2067,
+      "sha256": "c83ca0c23866a09e14ce304d99d4dffcf08e49bfea8a862c2fc0bb584d80468f"
+    },
+    {
+      "path": "docs/MANUAL_GUIDE_STEP.md",
+      "bytes": 1272,
+      "sha256": "617ebb08a439d9c51032480aa44bceac57def62adbe7b0e0446cbc4fa09d5989"
+    },
+    {
+      "path": "docs/MODEL_PROVENANCE.md",
+      "bytes": 5398,
+      "sha256": "513a4e5cf92b6ea787c8053eada41e4cb1dacf58fef5e9a29e3e4ba6aa37da8d"
+    },
+    {
+      "path": "docs/QUICKSTART.md",
+      "bytes": 13731,
+      "sha256": "eb0c9fdcc537736c5029f08a49f8e358ac305d7778de64f642e94f6d5878ebb6"
+    },
+    {
+      "path": "docs/RELEASE_STATUS.md",
+      "bytes": 1799,
+      "sha256": "c1eef74a1f7d87c8ec7363aecb2b4fa284468abf83ab610c6df11c69611b1d9e"
+    },
+    {
+      "path": "docs/REPOSITORY_LAYOUT.md",
+      "bytes": 2284,
+      "sha256": "d82e978b8260741077922290a2e5b9a6e6941d2daf27d1e62ddccd8a1bf4309e"
+    },
+    {
+      "path": "docs/images/camera-controls.svg",
+      "bytes": 2979,
+      "sha256": "28541580eeaf34275676fda5e96c8f86e173eef58e4acca6648010e577486de9"
+    },
+    {
+      "path": "docs/images/demo-gesture-result.jpg",
+      "bytes": 71602,
+      "sha256": "befe8a2795a75ed5d68c6a1fef8adc9b9a45550e7477f922940833d0b893d496"
+    },
+    {
+      "path": "docs/images/demo-inputs-guide-result.jpg",
+      "bytes": 69964,
+      "sha256": "880b32987b244abc4f772ae27c0346c65363ac3e72855f38836d540433a7bd62"
+    },
+    {
+      "path": "docs/images/workflow.svg",
+      "bytes": 3053,
+      "sha256": "de9c520ec6a08f1502ea3d0eaf531b2310195cc99d2e60a12aa42361773e14e2"
+    },
+    {
+      "path": "evidence/PUBLICATION_MANIFEST.json",
+      "bytes": 2635,
+      "sha256": "7f2517478bbb8de081a6abdf2a834bd642d334798ae6baf46933b90880be02b4"
+    },
+    {
+      "path": "evidence/REORGANIZATION.json",
+      "bytes": 13203,
+      "sha256": "cc79a6baeb39b6301bcdf2d82f083b122a4967cce96c22cc3cbee6faaf30726a"
+    },
+    {
+      "path": "evidence/history/INVENTORY_27.json",
+      "bytes": 9251,
+      "sha256": "f7e4c84ff2b0a1b64b31c64b1ef57db2e77366845616fe8e02341c9ab01615ae"
+    },
+    {
+      "path": "evidence/provenance/RUNTIME_PROVENANCE.json",
+      "bytes": 2038,
+      "sha256": "dd9883e0a036b9b69b4a5f841c104413d51b0bc4d23b2b262f7163b4b7e18fa7"
+    },
+    {
+      "path": "evidence/provenance/WEIGHT_PROVENANCE.json",
+      "bytes": 9148,
+      "sha256": "63edd55261deb569b9f6f830fa882cd01db652135231cee0b0ac215b812b9a3e"
+    },
+    {
+      "path": "evidence/validation/BUILDER_EQUIVALENCE.json",
+      "bytes": 360,
+      "sha256": "6617a28359cb0381604d4b705f8aeec8b0f5d9c4c335e900d7297d3833b8eb90"
+    },
+    {
+      "path": "evidence/validation/COMPARE_VALIDATION_26.json",
+      "bytes": 565,
+      "sha256": "d4e584663cceeeb8ce8f8d142e665c3491744ddcd64670780d28dc5c954e3838"
+    },
+    {
+      "path": "evidence/validation/ISOLATED_ENVIRONMENT_TEST.json",
+      "bytes": 7638,
+      "sha256": "c30f20f77b6f100a18bf322627c0e6140fd3c720925cbed83871ab086f11d8a0"
+    },
+    {
+      "path": "evidence/validation/PORTABLE_SKILL_VALIDATION.json",
+      "bytes": 1292,
+      "sha256": "5be4980bfa27386d8d53a07edc0c5fba1e93f8f7bd9721ad68eb9d0a807aa0af"
+    },
+    {
+      "path": "evidence/validation/QUICKSTART_VALIDATION.json",
+      "bytes": 348,
+      "sha256": "f0d83e4fbd940a0be548b9967da6bdca0c947955bb68d4190bed48f9f948110b"
+    },
+    {
+      "path": "evidence/validation/RELEASE_VALIDATION_23.json",
+      "bytes": 983,
+      "sha256": "14d7e3508e8360193c71242c3e5af106594ccfae1bbd754664116d141cdf986f"
+    },
+    {
+      "path": "evidence/validation/REORGANIZATION_TESTS.json",
+      "bytes": 2094,
+      "sha256": "5691e26771cef57ed2a77bd76b55449e1156bb0e12c77a12836f8de1da9b3b1e"
+    },
+    {
+      "path": "evidence/validation/VALIDATION_RESULTS.json",
+      "bytes": 2332,
+      "sha256": "c4d42e1f40e847c600530e9ee716a0a9dd546815e8ac2d6552331275f7eaf0cf"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/SKILL.md",
+      "bytes": 8904,
+      "sha256": "fbb78cde47b5a31d54d6203074faad8d37478b7de0b4f07dd41c9f7f3bfde97c"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/agents/openai.yaml",
+      "bytes": 292,
+      "sha256": "ef8207711c354bcdae75700fd160294ed43a4d3fcf27855f69e789bb65974868"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/references/continuity-record.md",
+      "bytes": 4235,
+      "sha256": "c3fd145e6a948b9c36a587c3bbf2a98c34c39c587fa9882a489b9dee0ffcdce5"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/references/h3-comfyui.md",
+      "bytes": 7515,
+      "sha256": "35fef64a3ae7ef07f1c943b7deb934faa248d9b4d6fdcf37d67b35bd09dd845a"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/references/image-adapters.md",
+      "bytes": 4247,
+      "sha256": "7946d32e0525712448411772f750ca2726297ef5a954f2f7b1b9ba1105fb5148"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/references/portability.md",
+      "bytes": 3588,
+      "sha256": "017a1b57955890103d2a47f3dfcae00ade753b9091a5497fd36e0eaf2526c2c0"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/references/validation.md",
+      "bytes": 4795,
+      "sha256": "1f44fdcc6f8db50b8284cc02b639249cc3b33d17c5ac05cf216c5942a5206079"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/scripts/sample_video.py",
+      "bytes": 10078,
+      "sha256": "0e16e35a9247ef9ba06bb67a47e4ae47176b3574e425afd2bd886a90f75ed12f"
+    },
+    {
+      "path": "skills/comfyui-reframe-continuity/scripts/test_sample_video.py",
+      "bytes": 4780,
+      "sha256": "1658cc0a96bf75e876e6b8d12273e67f33459b2e4a22eb5e6a609c1405ab0ef0"
+    },
+    {
+      "path": "src/continuity_reframe/__init__.py",
+      "bytes": 49,
+      "sha256": "bbeb945bf1f891da0b02de72be98f7264d180371a902de33947ce46e6c6a488c"
+    },
+    {
+      "path": "src/continuity_reframe/attach_camera.py",
+      "bytes": 3474,
+      "sha256": "ae0e7bd795e4d618726a2e425f0762d4ed093f907e3730cdb948786a35b8fbd5"
+    },
+    {
+      "path": "src/continuity_reframe/choose_camera.py",
+      "bytes": 1382,
+      "sha256": "6a0b42cbd08a76d9daf36c7db96ebb90b1d0f40ef8bca63df7472d4bc220a313"
+    },
+    {
+      "path": "src/continuity_reframe/cinema.py",
+      "bytes": 19376,
+      "sha256": "2120ef149a6fa03276b4f3996a42f16700865b54aba0dd2e3b33978667ad0b24"
+    },
+    {
+      "path": "src/continuity_reframe/visual.py",
+      "bytes": 1970,
+      "sha256": "928458fd4270bf99de564b2d59be5263776d01784356a2c1feb94c65fbaa7b09"
+    },
+    {
+      "path": "tests/js/fixtures/camera_picker_before_fix.html",
+      "bytes": 7959,
+      "sha256": "41ec7ebbef0b392d844e3e19c4b0477d686ff85f961f9148983cdf20dd477ac7"
+    },
+    {
+      "path": "tests/js/test_current_controls.cjs",
+      "bytes": 2311,
+      "sha256": "625ea5b153b88435f500d64ee095e7a85eb384f0161af4a96801e35ce12b268c"
+    },
+    {
+      "path": "tests/js/test_manual_text.cjs",
+      "bytes": 3293,
+      "sha256": "d00ccacaa2fe8d554efdec70ca067346384b37652962a5af013970529393fdb6"
+    },
+    {
+      "path": "tests/python/test_compare_pending.py",
+      "bytes": 1749,
+      "sha256": "7a457c8603c0931fb49610a7a92c494f1f7e27bdee5d305d7f24acdea4bdcb57"
+    },
+    {
+      "path": "tests/python/test_contracts.py",
+      "bytes": 2606,
+      "sha256": "cdb2bea2dccbd360df31982a460cfa987190d4b0a5fc05fa3da9c50ee39507dc"
+    },
+    {
+      "path": "tests/python/test_final_options.py",
+      "bytes": 2484,
+      "sha256": "823a8a9aacefc34ae38f34917b16b29f86179cfd937231b82c4b092abad706b2"
+    },
+    {
+      "path": "tests/python/test_layout.py",
+      "bytes": 1421,
+      "sha256": "d99acca25650140a78f6215983e26923f91ff034b601e8404c31dfe3e07ad47f"
+    },
+    {
+      "path": "tests/python/test_resume_review.py",
+      "bytes": 2805,
+      "sha256": "8ca74764c50202ed679c0d1c7a29b66322cea3e89facb1df6564d6081e5f52ee"
+    },
+    {
+      "path": "tests/python/test_symlink_collect.py",
+      "bytes": 1433,
+      "sha256": "4452e91da975bd4acce42547a620d2b7f320cfaafd5240224c70ec416e5377b9"
+    },
+    {
+      "path": "ui/camera_picker.html",
+      "bytes": 9168,
+      "sha256": "52776b2eca505da162a5dc48be9e21946f8db8b995e320ae052aef4ef224bacc"
+    },
+    {
+      "path": "visual.py",
+      "bytes": 254,
+      "sha256": "703be42f9588c7490d83b0fd892d002a682a20bc83a2dd70f025d500eecdb9f5"
+    },
+    {
+      "path": "workflows/workflow.template.api.json",
+      "bytes": 4951,
+      "sha256": "d94b2db802cfebf5b88542356cb4a267e8cb5ed35dbbb62a1f039815baa00256"
+    },
+    {
+      "path": "workflows/workflow.visual.template.json",
+      "bytes": 26369,
+      "sha256": "2966f8322afc5c96fb8b773f226b6e90c6b30703aecff617c7d15a4e911e217e"
+    },
+    {
+      "path": "workflows/workflow.with_camera.template.api.json",
+      "bytes": 5296,
+      "sha256": "8f47f7b1478f2423a7af9ff26633841ead75542084870f39d09e9addf65e046c"
+    },
+    {
+      "path": "workflows/workflow.with_camera.template.visual.json",
+      "bytes": 27737,
+      "sha256": "737c4e15ab90654a1056439448a7af0151a88f80e508c89631536fca119c1928"
+    }
+  ]
+}

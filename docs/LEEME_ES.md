@@ -1,6 +1,6 @@
 # Guía rápida de revisión
 
-Abre `camera_picker.html` para elegir frontal, tres cuartos, lateral, abierto, cenital, bajo o espaldas y afinar azimut, elevación y distancia. Carga primero la ficha generada por `prepare`. El esquema representa una intención: no reconstruye el escenario ni controla una cámara exacta.
+Abre `ui/camera_picker.html` para elegir frontal, tres cuartos, lateral, abierto, cenital, bajo o espaldas y afinar azimut, elevación y distancia. Carga primero la ficha generada por `prepare`. El esquema representa una intención: no reconstruye el escenario ni controla una cámara exacta.
 
 La imagen sigue siendo un paso **manual** en ChatGPT, FLUX u otra herramienta. Decide qué objetos deberían verse antes de pedir la imagen. Revisa postura inicial, manos, fondo, oclusiones y margen para el gesto; después completa la ficha y sus aprobaciones. No hay llamadas automáticas ni API de pago.
 

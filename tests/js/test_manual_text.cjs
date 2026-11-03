@@ -11,7 +11,7 @@ function load(path){
 const original=load(__dirname+'/fixtures/camera_picker_before_fix.html');
 original.e.preview.value='MI TEXTO MANUAL';original.e.az.value='35';original.e.az.handlers.input();
 assert.notEqual(original.e.preview.value,'MI TEXTO MANUAL');console.log('REPRODUCED: prior version silently loses manual text.');
-const path=process.argv[2]||__dirname+'/../camera_picker.html',t=load(path),e=t.e;
+const path=process.argv[2]||__dirname+'/../../ui/camera_picker.html',t=load(path),e=t.e;
 e.az.value='35';e.az.handlers.input();assert(e.preview.value.includes('azimuth 35'));
 const manual='Mi instrucción: mantener la mano visible.\nTexto propio con acentos.';e.preview.value=manual;
 for(const [id,value] of [['az','52'],['el','25'],['dist','1.8'],['notes','Nuevas notas']]){e[id].value=value;e[id].handlers.input();assert.equal(e.preview.value,manual,id);}

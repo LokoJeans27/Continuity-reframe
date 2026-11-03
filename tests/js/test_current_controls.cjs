@@ -1,5 +1,5 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
-const html=fs.readFileSync(__dirname+'/../camera_picker.html','utf8'),js=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+const html=fs.readFileSync(__dirname+'/../../ui/camera_picker.html','utf8'),js=html.match(/<script>([\s\S]*?)<\/script>/)[1];
 assert(!/[\u00c2\u00c3\ufffd]/.test(html),'No broken UTF-8 text');
 assert(html.includes('Regenerar instrucci\u00f3n'));assert(html.includes('\u00bfReemplazar'));
 const e={};for(const id of ['az','el','dist','shot','notes','preview','azout','elout','distout','cam','ray','sidecam','side','file','save','status','regenerate'])e[id]={value:'',attributes:{},handlers:{},addEventListener(n,f){this.handlers[n]=f},setAttribute(n,v){this.attributes[n]=v}};
