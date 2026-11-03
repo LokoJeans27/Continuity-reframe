@@ -1,7 +1,12 @@
 {
-  "file_count_including_inventory": 51,
+  "file_count_including_inventory": 54,
   "scope": "Git repository blob bytes; excludes this inventory and .git metadata. Windows checkout line endings may differ.",
   "files_excluding_inventory": [
+    {
+      "path": "ALTERNATIVE_INSTALL.md",
+      "bytes": 3960,
+      "sha256": "641c5cf4d67d6bf016b1e42a08cca957fdb644ac0dfeaec136eb073c73525cd5"
+    },
     {
       "path": "BUILDER_EQUIVALENCE.json",
       "bytes": 360,
@@ -16,6 +21,11 @@
       "path": "DEPENDENCY_NOTICES.en.md",
       "bytes": 2575,
       "sha256": "d92ada21d98c50f1aff37a5c44d67e323ee0eef0920326ab729932591dd244b2"
+    },
+    {
+      "path": "ISOLATED_ENVIRONMENT_TEST.json",
+      "bytes": 7638,
+      "sha256": "c30f20f77b6f100a18bf322627c0e6140fd3c720925cbed83871ab086f11d8a0"
     },
     {
       "path": "LEEME_ES.md",
@@ -44,8 +54,8 @@
     },
     {
       "path": "QUICKSTART.md",
-      "bytes": 13466,
-      "sha256": "240777512f57b52d826f5ab3625d09f203d77f98b0dd97b473dd237671fb3f02"
+      "bytes": 13636,
+      "sha256": "a646696c1231515bbcd59d5f6576ccbf732492251e9eb729796b46d96a92665e"
     },
     {
       "path": "QUICKSTART_VALIDATION.json",
@@ -54,13 +64,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 21205,
-      "sha256": "bbf0862fbb80bab1fda29731bcc45295b388694e83c2603e5e0b5298f5daf39c"
+      "bytes": 21402,
+      "sha256": "9b791409abba28515c4748ccd42484143672e29dcf79df34d9dc4f5cfd6eefba"
     },
     {
       "path": "RELEASE_STATUS.md",
-      "bytes": 1566,
-      "sha256": "6aa7cb637190d18da0b0c94f8b1cc34e612f6cc22024c1cdf5bc234461a2cb1b"
+      "bytes": 1712,
+      "sha256": "e1fb7013928cd5129b8f5252d84e760d91714bc64efab8ed336dbfad54c9e0bc"
     },
     {
       "path": "RELEASE_VALIDATION_23.json",
@@ -131,6 +141,11 @@
       "path": "h3_camera_brief/__init__.py",
       "bytes": 2739,
       "sha256": "da7804c11298d7e77ac3e71e58c2500c5a201a2af6d54f3a9fe18e9185e21ca4"
+    },
+    {
+      "path": "isolated-constraints.txt",
+      "bytes": 123,
+      "sha256": "4a2a11d632049fc01ff72fd39222d82e03b2593d33a8645196ecb378cbdefa39"
     },
     {
       "path": "portable_skill/comfyui-reframe-continuity/SKILL.md",

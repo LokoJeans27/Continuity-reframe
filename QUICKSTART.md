@@ -1,10 +1,10 @@
 # Quickstart: use an existing ComfyUI installation
 
-**Before starting:** provide a continuous video with an audio stream and at least approximately 5.167 seconds for the default124-frame clip at24fps. Have a working ComfyUI installation, four H3 weights, Python with NumPy/OpenCV and FFmpeg/ffprobe. Start the local server before doctor. This is not a clean-install certification.
+**Before starting:** provide a continuous video with an audio stream and at least approximately 5.167 seconds for the default124-frame clip at24fps. Have a working ComfyUI installation, four H3 weights, Python with NumPy/OpenCV and FFmpeg/ffprobe. Start the local server before doctor. A separately installed package/server test is documented in ALTERNATIVE_INSTALL.md; it reused existing weights, driver and FFmpeg.
 
-This guide is for someone who already has a working local ComfyUI installation and can run commands in a terminal. It is not a validated clean-install installer. Owner-authorized illustrative demo stills are included in docs/images. No executable example videos, standalone generation guides or model weights are bundled. Use your own authorized video and check model-license eligibility before downloading or running weights. The first successful setup will require manual file placement and scene/guide review.
+This guide is for someone who already has a working local ComfyUI installation and can run commands in a terminal. It is not an automated from-zero installer. Owner-authorized illustrative demo stills are included in docs/images. No executable example videos, standalone generation guides or model weights are bundled. Use your own authorized video and check model-license eligibility before downloading or running weights. The first successful setup will require manual file placement and scene/guide review.
 
-**Historical GPU version warning:** the exact recorded PyTorch nightly is no longer found in the checked official index. The newly installed CLI has passed its tests, but full H3 inference on a newly installed alternative GPU stack is still pending. Read the installation-status section in README.md before choosing versions.
+**Historical GPU version warning:** the exact recorded PyTorch nightly is no longer found in the checked official index. The newly installed CLI passed its tests, and one complete H3 run succeeded on an independently installed alternative Torch/CUDA stack with existing weights, driver and FFmpeg. Read the installation-status section in README.md before choosing versions.
 
 ## 1. Check the two environments
 
@@ -58,7 +58,7 @@ Back in the **kit folder**, run:
 python -B cinema.py doctor --server http://127.0.0.1:8188 --out doctor-new.json
 ```
 
-Expected: `missing_nodes` is empty and all four models have `listed: true`. This exact command was checked against the existing validation server; it found all nodes and models. If it fails, read the newly written report: missing models require correct paths/names; missing native H3 nodes require a compatible ComfyUI environment. Do not submit until resolved. Doctor is a dependency check, not a fresh-install certification or a hash check.
+Expected: `missing_nodes` is empty and all four models have `listed: true`. Doctor was checked against the existing server and the separately installed alternative server; both listed all required nodes and models. If it fails, read the newly written report: missing models require correct paths/names; missing native H3 nodes require a compatible ComfyUI environment. Do not submit until resolved. Doctor is a dependency check, not a fresh-install certification or a hash check.
 
 ## 4. Prepare one clip and a reviewed guide
 

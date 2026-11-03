@@ -1,0 +1,397 @@
+{
+  "date": "2026-11-03",
+  "status": "one isolated H3 generation completed",
+  "python": "3.13.12",
+  "torch": "2.13.0+cu130",
+  "torchvision": "0.28.0+cu130",
+  "torchaudio": "2.11.0+cu130",
+  "comfyui": "0.34.3",
+  "comfyui_commit": "87465b8f1f64a27a46f16f22b13b410494dca66d",
+  "gpu": "RTX 5070 Ti 16 GB",
+  "driver": "610.88",
+  "ram": "approximately 64 GB",
+  "attention": "PyTorch; SageAttention and Triton not installed",
+  "frames": 124,
+  "fps": 24,
+  "width": 800,
+  "height": 480,
+  "ref_image_size": "max",
+  "steps": 20,
+  "seed": 18840101,
+  "submit_to_collect_seconds": 587.0783219337463,
+  "largest_sampled_gpu_memory_mib": 12238,
+  "memory_sampling_limit": "approximately 50-second samples, not an exact peak",
+  "audio_packets_match_prepared_source": true,
+  "source_scope": "clean tracked ComfyUI source snapshot; independent package installation; existing weights, driver and FFmpeg reused",
+  "limitations": [
+    "One scene only; no universal compatibility or performance guarantee",
+    "Not a fresh download of weights/driver/FFmpeg",
+    "No interactive browser or canvas acceptance",
+    "Manual image guide and scene review remain required",
+    "Different attention/runtime from historical pilot; not a single-variable quality comparison"
+  ],
+  "installed_distributions": [
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.5"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0"
+    },
+    {
+      "name": "alembic",
+      "version": "1.20.1"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0"
+    },
+    {
+      "name": "anyio",
+      "version": "4.16.0"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "av",
+      "version": "19.0.2"
+    },
+    {
+      "name": "blake3",
+      "version": "1.0.11"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.23"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6"
+    },
+    {
+      "name": "comfy-aimdo",
+      "version": "0.4.15"
+    },
+    {
+      "name": "comfy-angle",
+      "version": "0.1.1"
+    },
+    {
+      "name": "comfy-kitchen",
+      "version": "0.2.31"
+    },
+    {
+      "name": "comfyui-embedded-docs",
+      "version": "0.5.10"
+    },
+    {
+      "name": "comfyui-workflow-templates-core",
+      "version": "0.3.331"
+    },
+    {
+      "name": "comfyui-workflow-templates-json",
+      "version": "0.1.66"
+    },
+    {
+      "name": "comfyui-workflow-templates-media-api",
+      "version": "0.3.84"
+    },
+    {
+      "name": "comfyui-workflow-templates-media-assets-01",
+      "version": "0.1.38"
+    },
+    {
+      "name": "comfyui-workflow-templates-media-image",
+      "version": "0.3.160"
+    },
+    {
+      "name": "comfyui-workflow-templates-media-other",
+      "version": "0.3.229"
+    },
+    {
+      "name": "comfyui-workflow-templates-media-video",
+      "version": "0.3.101"
+    },
+    {
+      "name": "comfyui_frontend_package",
+      "version": "1.49.6"
+    },
+    {
+      "name": "comfyui_workflow_templates",
+      "version": "0.11.54"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.2"
+    },
+    {
+      "name": "filelock",
+      "version": "4.2.4"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.8.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "1.33.0"
+    },
+    {
+      "name": "idna",
+      "version": "3.20"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "kornia",
+      "version": "0.9.0"
+    },
+    {
+      "name": "kornia_rs",
+      "version": "0.2.0"
+    },
+    {
+      "name": "Mako",
+      "version": "1.4.3"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "multidict",
+      "version": "7.2.1"
+    },
+    {
+      "name": "networkx",
+      "version": "3.7"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "opencv-python",
+      "version": "5.0.0.93"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pillow",
+      "version": "13.0.0"
+    },
+    {
+      "name": "pip",
+      "version": "25.3"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.4"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.2"
+    },
+    {
+      "name": "pydantic-settings",
+      "version": "2.16.2"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.50.2"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0"
+    },
+    {
+      "name": "PyOpenGL",
+      "version": "3.1.10"
+    },
+    {
+      "name": "python-dotenv",
+      "version": "1.2.4"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1"
+    },
+    {
+      "name": "sentencepiece",
+      "version": "0.2.2"
+    },
+    {
+      "name": "setuptools",
+      "version": "78.1.0"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4"
+    },
+    {
+      "name": "simpleeval",
+      "version": "1.0.8"
+    },
+    {
+      "name": "spandrel",
+      "version": "0.4.2"
+    },
+    {
+      "name": "SQLAlchemy",
+      "version": "2.1.6"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.2"
+    },
+    {
+      "name": "torch",
+      "version": "2.13.0+cu130"
+    },
+    {
+      "name": "torchaudio",
+      "version": "2.11.0+cu130"
+    },
+    {
+      "name": "torchsde",
+      "version": "0.2.6"
+    },
+    {
+      "name": "torchvision",
+      "version": "0.28.0+cu130"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1"
+    },
+    {
+      "name": "trampoline",
+      "version": "0.1.2"
+    },
+    {
+      "name": "transformers",
+      "version": "5.13.0"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.3"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0"
+    },
+    {
+      "name": "yarl",
+      "version": "1.25.1"
+    }
+  ],
+  "media_full_decode_checks": [
+    {
+      "file": "native_audio.mp4",
+      "full_decode_exit_code": 0,
+      "errors": ""
+    },
+    {
+      "file": "original_audio.mp4",
+      "full_decode_exit_code": 0,
+      "errors": ""
+    },
+    {
+      "file": "comparison/comparison.mp4",
+      "full_decode_exit_code": 0,
+      "errors": ""
+    }
+  ],
+  "visual_limit": "Selected frame grids show altered mechanical-arm timing; no exact acting or identity guarantee."
+}

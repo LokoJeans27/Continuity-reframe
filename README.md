@@ -1,8 +1,8 @@
 # H3 Camera Reference Kit — MIT release candidate
 
-**Input required:** one continuous video with audio and at least approximately 5.167 seconds available for the default 124-frame selection at 24 fps. Use the exact source interval described in QUICKSTART. A working local ComfyUI server, the four H3 weights, Python with NumPy/OpenCV, and FFmpeg/ffprobe are required before doctor. A clean installation has not been validated.
+**Input required:** one continuous video with audio and at least approximately 5.167 seconds available for the default 124-frame selection at 24 fps. Use the exact source interval described in QUICKSTART. A working local ComfyUI server, the four H3 weights, Python with NumPy/OpenCV, and FFmpeg/ffprobe are required before doctor. A complete from-zero setup, including new model/FFmpeg acquisition and interactive UI, has not been validated.
 
-Start with [QUICKSTART.md](QUICKSTART.md) for an existing ComfyUI installation: prerequisites, model placement, server startup, manual guide preparation and an end-to-end command sequence. A clean installation has not been validated.
+Start with [QUICKSTART.md](QUICKSTART.md) for an existing ComfyUI installation: prerequisites, model placement, server startup, manual guide preparation and an end-to-end command sequence. A complete from-zero setup, including new model/FFmpeg acquisition and interactive UI, has not been validated.
 
 A local, reusable workflow for preparing a video, selecting a target camera intention, inserting a manually generated image guide and running H3 Ref2VA in ComfyUI. This is a published experimental release with the validation limits documented below; project-authored code is licensed under MIT (see LICENSE).
 
@@ -12,7 +12,7 @@ The recorded `torch==2.14.0.dev20260705+cu130` is a **historical test environmen
 
 **New CLI installation tested:** CPython 3.13.12 from its official NuGet distribution, NumPy 2.4.6 and opencv-python 5.0.0.93 from PyPI. The five kit test suites, five sampler tests, `pip check`, prepare and build passed. Doctor and collection/comparison used an existing server/job; existing FFmpeg was reused. This does not establish a clean H3 server installation.
 
-**Alternative under evaluation:** official PyTorch 2.13.0+cu130, torchvision 0.28.0+cu130 and torchaudio 2.11.0+cu130 installed in a separate environment. CUDA matrix multiplication, audio resampling, `pip check`, ComfyUI 0.34.3 startup and H3 node/model discovery passed on RTX 5070 Ti. Attention uses PyTorch, without SageAttention or Triton. **H3 generation in this new environment is not yet validated.** Existing model files are referenced, not downloaded again. See [official PyTorch packages](https://pytorch.org/get-started/previous-versions/) and [CPython NuGet documentation](https://docs.python.org/3.13/using/windows.html#the-nuget-org-packages).
+**Alternative tested on one complete H3 run:** official PyTorch 2.13.0+cu130, torchvision 0.28.0+cu130 and torchaudio 2.11.0+cu130, with ComfyUI 0.34.3 and Python 3.13.12 in a separate package installation. On RTX 5070 Ti, the 124-frame, 800x480, max-reference run completed generation, collection and comparison in 587.1 seconds. The largest approximately 50-second VRAM sample was 12238 MiB; this is not an exact peak. Attention used PyTorch without SageAttention or Triton. Existing model files, driver and FFmpeg were reused; browser/canvas operation and fresh model acquisition remain untested. See [installation evidence](ISOLATED_ENVIRONMENT_TEST.json) and the [isolated package/setup steps](ALTERNATIVE_INSTALL.md).
 
 ## Visual reference
 
