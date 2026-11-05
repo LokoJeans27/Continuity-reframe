@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-05",
+  "scope": "Automated local geometry, DOM-handler and packaged synthetic-data checks; no real-browser visual result claimed",
+  "passed": [
+    "Both orbit directions and independent axis inversion",
+    "Alt-left orbit, Alt-middle pan, Alt-right dolly",
+    "Screen-space pan projection at frontal, lateral, oblique and overhead views",
+    "Pan translates eye and target equally",
+    "Dolly changes orbit radius without changing FOV or target",
+    "Shift-wheel changes FOV without changing camera distance",
+    "Trackpad modes, keyboard pan/dolly/reset and export",
+    "Exported position, target, target offset and camera extrinsics",
+    "Manual prompt preservation and current-control agreement",
+    "2x device-pixel-ratio backing buffer",
+    "57600 finite synthetic Gaussians, decoded JPEG, front projection and color alignment",
+    "Packaged HTML rebuilt from local fixture inputs"
+  ],
+  "pending": [
+    "Actual browser mouse and WebGL visual acceptance",
+    "Subjective sharpness assessment",
+    "Interactive frame-time measurements"
+  ],
+  "limits": "Maya-style bindings, not an exact Maya/Blender clone. Proxy scale/vertical remain assumed. More samples do not reconstruct hidden surfaces."
+}

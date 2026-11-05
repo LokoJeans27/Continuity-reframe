@@ -1,6 +1,6 @@
 # Camera-intent studio: local experimental prototype
 
-This optional viewer orbits an **already prepared** depth-derived Gaussian proxy. Mouse drag and keyboard arrows rotate; sliders change azimuth, elevation, relative distance and zoom. Front, lateral and overhead shortcuts generate visible, editable instructions for manual image-guide creation. Coordinates are source-image axes, not anatomical left/right; positive elevation assumes vertical. At elevation90 the optical axis points down in those assumed axes. Gravity, focal length, metric scale and hidden geometry are not calibrated.
+This optional viewer orbits an **already prepared** depth-derived Gaussian proxy. Maya-style Alt+left drag orbits, Alt+middle drag pans, and Alt+right drag dollies. Trackpad modes, keyboard shortcuts and independent optical zoom are available; see [navigation controls](CAMERA_NAVIGATION.md). Sliders remain available. Pan moves both the camera and aim target, and export records both. Front, lateral and overhead shortcuts generate visible, editable instructions for manual image-guide creation. Coordinates are source-image axes, not anatomical left/right; positive elevation assumes vertical. At elevation90 the optical axis points down in those assumed axes. Gravity, focal length, metric scale and hidden geometry are not calibrated.
 
 For a ready-to-open, nonpersonal demonstration, use the [synthetic example](../examples/camera_intent/README.md). It includes an artificial JPEG/proxy pair and a self-contained HTML. It is not an example of reconstructing a real video; no real-scene proxy/frame pair is bundled.
 
@@ -19,3 +19,6 @@ Export JSON records camera position, target, basis, projection, editable prompt 
 Manual edits survive slider changes; regeneration requires confirmation. Exports indicate whether text matches current controls and keep review flags false. Extreme views reveal holes and stretched texture; those are missing evidence, not reliable surfaces. This viewer is static and does not reconstruct motion.
 
 Tests: `node tests/js/test_camera_geometry.cjs`, `node tests/js/test_camera_intent_dom.cjs`, `python -B tests/python/test_studio_builder.py`, and `python -B tests/python/test_synthetic_example.py`. The earlier private prototype was exercised in Edge; the sanitized packaging, synthetic fixture and UI logic have automated tests, not a new end-to-end browser/GPU validation.
+
+
+The current synthetic fixture uses 57,600 samples with a smaller footprint. Backing resolution follows display pixel ratio up to 2×; a footprint control exposes the sharpness/holes tradeoff. These changes address known sampling and resolution limits, but no new perceptual sharpness assessment in a real browser has yet been completed.

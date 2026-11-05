@@ -195,3 +195,6 @@ SageAttention 2.2.0 describes the existing tested environment. Its release artif
 ## Camera-intent prototype (published experimental)
 
 The selector restores scene controls and preserves manual text; see [selector behavior](docs/SELECTOR_REDESIGN.md). For orbiting a locally supplied depth-derived Gaussian proxy and exporting camera coordinates plus a manual guide prompt, see [camera-intent studio](docs/CAMERA_INTENT.md). No personal frame, personal Gaussian payload, generated guide or recent test video is included. A [synthetic viewer example](examples/camera_intent/README.md) includes an artificial frame, proxy and ready-to-open HTML; it is not an H3 source-video/guide pair. [Recent local pilot findings](docs/CAMERA_INTENT_TRIAL.md) distinguish execution from visual fidelity.
+
+
+Camera-intent navigation now has Maya-style orbit/pan/dolly gestures, per-axis orbit inversion, trackpad/keyboard alternatives and exported eye/target coordinates. See [controls and sharpness limits](docs/CAMERA_NAVIGATION.md). This does not add proxy reconstruction or automatic image generation.

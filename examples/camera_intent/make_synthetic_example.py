@@ -23,8 +23,8 @@ def create(destination):
     cv2.putText(rgb,'FRONT PLANE',(242,185),cv2.FONT_HERSHEY_SIMPLEX,.5,(25,30,35),1,cv2.LINE_AA)
     assert cv2.imwrite(str(out/'frame.jpg'),cv2.cvtColor(rgb,cv2.COLOR_RGB2BGR),[cv2.IMWRITE_JPEG_QUALITY,95])
     # The two planes are analytic fixture geometry, not inferred from an image.
-    y,x=np.mgrid[2:height:4,2:width:4];z=depth[y,x]
-    points=np.stack([(x-320)*z/576,(y-180)*z/576,z,*[rgb[y,x,c]/255 for c in range(3)],z*2.4/576,np.full_like(z,.9)],axis=-1).astype('<f4').reshape(-1,8)
+    y,x=np.mgrid[1:height:2,1:width:2];z=depth[y,x]
+    points=np.stack([(x-320)*z/576,(y-180)*z/576,z,*[rgb[y,x,c]/255 for c in range(3)],z*1.1/576,np.full_like(z,.98)],axis=-1).astype('<f4').reshape(-1,8)
     payload={'count':len(points),'target_depth':2.0,'buffer':base64.b64encode(points.tobytes()).decode('ascii')}
     with (out/'proxy.json').open('x') as f:json.dump(payload,f)
     root=Path(__file__).resolve().parents[2]
