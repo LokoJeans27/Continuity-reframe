@@ -1,6 +1,6 @@
-# Local camera-selector redesign candidate
+# Published camera-selector redesign
 
-Open `ui/camera_picker.html` directly in a browser. It is self-contained: no installation, web fonts, network service or new package is required. This candidate has not been published to GitHub.
+Open `ui/camera_picker.html` directly in a browser. It is self-contained: no installation, web fonts, network service or new package is required. This redesign is published in the experimental repository. It remains an intention editor, not a scene reconstruction. The separate [camera-intent studio](CAMERA_INTENT.md) can orbit an externally supplied proxy; its synthetic example is not a real-scene reconstruction.
 
 The interface adds visual shot presets, performer-relative side controls, separate azimuth/elevation/framing controls, an optional local reference frame and a conceptual schematic. It does not transform the reference image, reconstruct geometry or generate a guide. Guide creation and continuity review remain external/manual.
 

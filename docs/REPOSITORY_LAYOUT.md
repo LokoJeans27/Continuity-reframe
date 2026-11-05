@@ -5,7 +5,8 @@ Run commands from the repository root, where `cinema.py` is located.
 | Folder | Contents |
 | --- | --- |
 | `src/continuity_reframe/` | Python implementation: preparation, build, collection, comparison and camera helpers |
-| `ui/` | Browser camera selector |
+| `ui/` | Browser camera selector and optional camera-intent template/builder |
+| `examples/camera_intent/` | Synthetic frame, Gaussian proxy, ready-to-open viewer and reproducible generator; no real-scene reconstruction |
 | `configs/` | Scene template, camera presets and isolated-install constraints |
 | `workflows/` | ComfyUI API and visual workflow templates |
 | `custom_nodes/h3_camera_brief/` | Optional ComfyUI camera-text node |

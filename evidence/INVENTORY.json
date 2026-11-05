@@ -1,6 +1,6 @@
 {
-  "file_count_including_inventory": 79,
-  "scope": "Current staged Git blob bytes; excludes this inventory and .git metadata. Historical inventories describe their recorded versions only. Windows working-copy line endings may differ.",
+  "file_count_including_inventory": 85,
+  "scope": "Current staged Git blob bytes, excluding this inventory and .git metadata. Historical inventories remain historical.",
   "files_excluding_inventory": [
     {
       "path": "LICENSE",
@@ -9,8 +9,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 23621,
-      "sha256": "c14d5af0b698775bcc93f5fa5b33b81617ad720ad20b0d78cbf81311ee060cd6"
+      "bytes": 23978,
+      "sha256": "bfc6001787ea63f8274ee4148e2a4cf5f0831b0a994c224d687be7effdce4b53"
     },
     {
       "path": "attach_camera.py",
@@ -59,8 +59,8 @@
     },
     {
       "path": "docs/CAMERA_INTENT.md",
-      "bytes": 2811,
-      "sha256": "1cb93deafe542874076cfa363afca1399d1a512bd722ac0d432364997879dfbd"
+      "bytes": 3241,
+      "sha256": "22753ae20d4c340a053b9e9a3ee36e46236d078011391843ba6c7e9f0d8bbe26"
     },
     {
       "path": "docs/CAMERA_INTENT_TRIAL.md",
@@ -74,13 +74,13 @@
     },
     {
       "path": "docs/LEEME_ES.md",
-      "bytes": 2067,
-      "sha256": "c83ca0c23866a09e14ce304d99d4dffcf08e49bfea8a862c2fc0bb584d80468f"
+      "bytes": 3049,
+      "sha256": "63173960140ba1c47081dc9ecde292f915f25bf9a5a95bed702a637d6b92513b"
     },
     {
       "path": "docs/MANUAL_GUIDE_STEP.md",
-      "bytes": 1272,
-      "sha256": "617ebb08a439d9c51032480aa44bceac57def62adbe7b0e0446cbc4fa09d5989"
+      "bytes": 1540,
+      "sha256": "45fd30bb65460c5bdb68086d6e603e9a4662bdd6d2ee52e330c1be292df8bc3a"
     },
     {
       "path": "docs/MODEL_PROVENANCE.md",
@@ -89,28 +89,28 @@
     },
     {
       "path": "docs/QUICKSTART.md",
-      "bytes": 13809,
-      "sha256": "17860a2366470a0f6095d4b1b53b704f0eb75a123c02c08b3abb839a0fde54b1"
+      "bytes": 14303,
+      "sha256": "545a0dcb137a7e9db991e40790250083a33ae579b7162023f49207847acac868"
     },
     {
       "path": "docs/RELEASE_STATUS.md",
-      "bytes": 1883,
-      "sha256": "770f1bbd3644f9a9e838a4858e35332c1307f592d9a43482114c179e93577bb9"
+      "bytes": 2069,
+      "sha256": "a4629be417924be4d8d46711d068870f34f7c4a2df5653f6974a01a245b2440a"
     },
     {
       "path": "docs/REPOSITORY_LAYOUT.md",
-      "bytes": 2284,
-      "sha256": "d82e978b8260741077922290a2e5b9a6e6941d2daf27d1e62ddccd8a1bf4309e"
+      "bytes": 2471,
+      "sha256": "3f8260cbeb984721012fe5d68ca3d87d039cf598f896fae2e8fd6b9a30aff3d8"
     },
     {
       "path": "docs/SELECTOR_REDESIGN.md",
-      "bytes": 2436,
-      "sha256": "690d0944c8ad6bff889b270e3c7c6303435fbe9a0c680bf231942c600cba9a76"
+      "bytes": 2652,
+      "sha256": "059531077e768ea55a7dfe2c46b66c985b023e0f2411d016c652cb44b1db22d9"
     },
     {
       "path": "docs/TUTORIAL.md",
-      "bytes": 3564,
-      "sha256": "83357571a78ac9acbd47128c9e63247239cd9d637accd12a48a08bd35e4ec0ed"
+      "bytes": 3836,
+      "sha256": "22dfbe93fbc6eedd99bf92bcf2075ac03cc71fa5183be17dee899cc4f2502f0c"
     },
     {
       "path": "docs/images/camera-controls.svg",
@@ -213,6 +213,31 @@
       "sha256": "c4d42e1f40e847c600530e9ee716a0a9dd546815e8ac2d6552331275f7eaf0cf"
     },
     {
+      "path": "examples/camera_intent/README.md",
+      "bytes": 2395,
+      "sha256": "281a35fcd50b41d5d3b5c9a8cdffdcb55eb1163bf37a142395203e378050b321"
+    },
+    {
+      "path": "examples/camera_intent/make_synthetic_example.py",
+      "bytes": 2204,
+      "sha256": "d96684f6b7d423669b8011d75689dd2a1494b6674d9a82a37b4c789cc61ea729"
+    },
+    {
+      "path": "examples/camera_intent/ready/frame.jpg",
+      "bytes": 19695,
+      "sha256": "55d53f145dd091292d941655a83ad86e87abdbdf2ef661a8ec5df0b26528a214"
+    },
+    {
+      "path": "examples/camera_intent/ready/proxy.json",
+      "bytes": 614451,
+      "sha256": "2efbe6b6430b435e4ddafa040f6d4b75f86df0274e6c68d846cc4320c03d680e"
+    },
+    {
+      "path": "examples/camera_intent/ready/studio.html",
+      "bytes": 656563,
+      "sha256": "9c07ac6b79e9b22b0d71c4464777f2e1af877d8f9308d4868384699ef015b932"
+    },
+    {
       "path": "skills/comfyui-reframe-continuity/SKILL.md",
       "bytes": 8904,
       "sha256": "fbb78cde47b5a31d54d6203074faad8d37478b7de0b4f07dd41c9f7f3bfde97c"
@@ -294,8 +319,8 @@
     },
     {
       "path": "tests/js/test_camera_intent_dom.cjs",
-      "bytes": 2638,
-      "sha256": "7a628dc0c6a66004d70af348bafa1274a572f46347d53eedd216aeb40bbe663e"
+      "bytes": 2770,
+      "sha256": "acd5e7f8cf7e138bc36df9c6bff2349142d8bec228787fd66a9520eaf85bdb34"
     },
     {
       "path": "tests/js/test_current_controls.cjs",
@@ -346,6 +371,11 @@
       "path": "tests/python/test_symlink_collect.py",
       "bytes": 1433,
       "sha256": "4452e91da975bd4acce42547a620d2b7f320cfaafd5240224c70ec416e5377b9"
+    },
+    {
+      "path": "tests/python/test_synthetic_example.py",
+      "bytes": 1399,
+      "sha256": "a9076cb7dee94e217f1062e6908a4f195cfe0e3ff376a83bb85ca496bc101a82"
     },
     {
       "path": "ui/camera_intent/build_studio.py",

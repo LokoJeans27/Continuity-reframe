@@ -1,4 +1,4 @@
-# H3 Camera Reference Kit — MIT release candidate
+# H3 Camera Reference Kit - published experimental release
 
 **Input required:** one continuous video with audio and at least approximately 5.167 seconds available for the default 124-frame selection at 24 fps. Use the exact source interval described in QUICKSTART. A working local ComfyUI server, the four H3 weights, Python with NumPy/OpenCV, and FFmpeg/ffprobe are required before doctor. A complete from-zero setup, including new model/FFmpeg acquisition and interactive UI, has not been validated.
 
@@ -43,7 +43,7 @@ Frames at 38.000 s and 44.000 s from the owner-authorized [published demo](https
 ## What happens where
 
 1. **CLI:** extract frames, prepare video/audio and create a scene sheet.
-2. **Local browser:** choose a quick view and adjust azimuth/elevation/relative distance. The schematic illustrates intent; it does not reconstruct geometry. Edit the visible instruction and download a new sheet.
+2. **Local browser:** choose a quick view and adjust azimuth/elevation/relative distance. The schematic illustrates intent; it does not reconstruct geometry. Alternatively, the [camera-intent studio](docs/CAMERA_INTENT.md) orbits an externally prepared proxy; neither interface reconstructs a video or creates the image guide. Edit the visible instruction and download a new sheet.
 3. **Human review:** decide object visibility from multiple source frames. Do not move objects into frame to satisfy a prompt. Complete timed actions and record uncertainties.
 4. **Manual image tool:** create the reference in ChatGPT, FLUX or another provider. No automatic provider adapter or paid API is included. One locally generated FLUX guide completed H3 inference at800x480 in364.8s. The image was selected and transferred manually; there is no automatic FLUX-to-H3 adapter.
 5. **Human review:** check initial posture, anatomy, background perspective, occlusions and full gesture margins. Mark review flags only after inspection; they are assertions, not automatic validation.
@@ -188,6 +188,6 @@ The H3 artifact's published capitalization differs from the expected lowercase f
 SageAttention 2.2.0 describes the existing tested environment. Its release artifacts are distributed through the upstream [GitHub releases](https://github.com/thu-ml/SageAttention/releases); do not assume that `pip install sageattention==2.2.0` from PyPI reproduces that environment. This kit does not install it or certify a clean setup.
 
 
-## Camera-intent prototype (local revision)
+## Camera-intent prototype (published experimental)
 
-The selector restores scene controls and preserves manual text; see [selector behavior](docs/SELECTOR_REDESIGN.md). For orbiting a locally supplied depth-derived Gaussian proxy and exporting camera coordinates plus a manual guide prompt, see [camera-intent studio](docs/CAMERA_INTENT.md). No personal frame, Gaussian payload, generated guide or recent test video is included. [Recent local pilot findings](docs/CAMERA_INTENT_TRIAL.md) distinguish execution from visual fidelity.
+The selector restores scene controls and preserves manual text; see [selector behavior](docs/SELECTOR_REDESIGN.md). For orbiting a locally supplied depth-derived Gaussian proxy and exporting camera coordinates plus a manual guide prompt, see [camera-intent studio](docs/CAMERA_INTENT.md). No personal frame, personal Gaussian payload, generated guide or recent test video is included. A [synthetic viewer example](examples/camera_intent/README.md) includes an artificial frame, proxy and ready-to-open HTML; it is not an H3 source-video/guide pair. [Recent local pilot findings](docs/CAMERA_INTENT_TRIAL.md) distinguish execution from visual fidelity.

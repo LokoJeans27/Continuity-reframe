@@ -1,7 +1,7 @@
 # Manual image reference step
 
 1. Inspect decoded source frames and frame_manifest.json. Labels assume constant frame rate. Use multiple moments, including the initial pose and the full gesture.
-2. Select a camera brief and decide field of view and occlusions BEFORE listing visible objects. Do not relocate an object to force it into frame. Unknown hidden space remains an uncertainty.
+2. Optionally use the [camera-intent viewer](CAMERA_INTENT.md) with a proxy prepared externally. It does not estimate depth or generate a guide. Treat the proxy screenshot only as orientation evidence; copy its prompt into a new scene sheet, not its JSON as an H3 scene. Select a camera brief and decide field of view and occlusions BEFORE listing visible objects. Do not relocate an object to force it into frame. Unknown hidden space remains an uncertainty.
 3. Complete a new scene sheet: subject, camera, visible/partial objects with frame evidence, omitted objects and timed actions.
 4. Supply selected frames to ChatGPT or another image tool manually. Request one compatible initial frame with sufficient gesture margin. No image-generation adapter is included.
 5. Inspect anatomy, pose, contacts, background perspective, object positions and gesture margins. A different actor orientation alone does not prove a new camera. Reject invalid guides and retain the failed files for comparison.

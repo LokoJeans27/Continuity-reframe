@@ -72,6 +72,8 @@ This creates `project-new/source.mp4`, audio.wav, project.json, sampled frames, 
 
 Open `ui/camera_picker.html` in a local browser. Load `project-new/scene.template.json`, select a view, adjust controls and edit the instruction. Download a new scene sheet. Move that downloaded JSON into the kit folder as `scene-reviewed.json` using a new filename. Fill subject, camera, object visibility/evidence and timed acting entries; replace illustrative placeholders. Do not demand an object that should be outside the new field of view.
 
+Optional proxy route: see [CAMERA_INTENT.md](CAMERA_INTENT.md) and the [synthetic viewer example](../examples/camera_intent/README.md). For your own scene, depth/proxy creation must happen externally; this kit does not reconstruct your video. Export camera intent, then copy the reviewed instruction into the scene sheet. The camera-intent JSON is not a valid replacement for scene-reviewed.json. The synthetic example only exercises the viewer and cannot serve as an H3 source-video example.
+
 Create the first-frame guide manually in ChatGPT, FLUX or another authorized tool. Save it as `guide.png` in the kit folder. Inspect posture, anatomy, props, room perspective and hand margin against the original frames. Only after review set both JSON fields `reviewed` and `guide_reviewed` to the boolean `true`, without quotation marks. They record a human review, not an automatic guarantee.
 
 ## 5. Build, generate and collect

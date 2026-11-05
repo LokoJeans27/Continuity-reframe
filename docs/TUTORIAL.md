@@ -6,6 +6,8 @@ This viewing asset shows recorded interaction with the actual browser camera sel
 
 The image guide is prepared externally and transferred manually. The selector describes a camera intention, not an exact reconstruction of the room. Scene and guide review flags must be set only after human review. This video does not demonstrate importing a graph in the ComfyUI canvas or an automatic ChatGPT integration.
 
+This recording predates the new camera-intent studio and selector redesign. It demonstrates the underlying manual-guide/CLI sequence, not the current 3D proxy interface. See [the synthetic viewer example](../examples/camera_intent/README.md) for that separate prototype.
+
 ## What was recorded
 
 - Windows PC with RTX 5070 Ti 16 GB; separate ComfyUI 0.34.3 environment, Python 3.13.12 and PyTorch 2.13.0+cu130, using existing weights and FFmpeg.

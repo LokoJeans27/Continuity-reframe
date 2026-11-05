@@ -1,6 +1,7 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
-const html=fs.readFileSync(__dirname+'/../../ui/camera_intent/studio.html.template','utf8');
-assert(!html.includes('57600'));assert(!/data:image\/\w+;base64,[A-Za-z0-9+/]{100}/.test(html));
+const synthetic=process.argv.includes('--synthetic');
+const html=fs.readFileSync(__dirname+(synthetic?'/../../examples/camera_intent/ready/studio.html':'/../../ui/camera_intent/studio.html.template'),'utf8');
+if(!synthetic){assert(!html.includes('57600'));assert(!/data:image\/\w+;base64,[A-Za-z0-9+/]{100}/.test(html));}
 const values={yaw:'0',pitch:'0',radius:'1',zoom:'1',notes:'',intent:''},elements={};let confirm=false,saved;
 const gl=new Proxy({getShaderParameter:()=>true,getProgramParameter:()=>true,getError:()=>0},{get:(o,k)=>o[k]||(k===k.toUpperCase()?1:()=>({}))});
 const el=id=>elements[id]||(elements[id]={value:values[id]||'',checked:false,textContent:'',clientWidth:640,clientHeight:360,addEventListener(){},getContext:()=>gl,toDataURL:()=>'data:image/png;base64,TEST',setPointerCapture(){},click(){}});
