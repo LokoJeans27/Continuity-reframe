@@ -1,6 +1,6 @@
 {
-  "file_count_including_inventory": 86,
-  "scope": "Current staged Git blob bytes, excluding this inventory and .git metadata. Historical inventories remain historical.",
+  "scope": "Current Git blob bytes, excluding this inventory; historical records remain historical.",
+  "file_count_including_inventory": 89,
   "files_excluding_inventory": [
     {
       "path": "LICENSE",
@@ -9,8 +9,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 24401,
-      "sha256": "e568be2372b1d7f8f32364af2e4a9932ea371c61c6e56c9dbba0fd5710a672f8"
+      "bytes": 24701,
+      "sha256": "c8c93283a1f3c31c646bab2fe91c995d21c84908c40c1d976eb09efa9ea9f1d0"
     },
     {
       "path": "attach_camera.py",
@@ -59,13 +59,18 @@
     },
     {
       "path": "docs/CAMERA_INTENT.md",
-      "bytes": 3492,
-      "sha256": "a63711ada88bd5306ddda5e8b0f63f65fe723014a4d511b987f6a5dae97db26e"
+      "bytes": 4033,
+      "sha256": "a0526120004c9bc889ec821d96aa465cba0fe148125c8f957bcbb2eaf705c18f"
     },
     {
       "path": "docs/CAMERA_INTENT_TRIAL.md",
       "bytes": 2052,
       "sha256": "ea3e2adec667dca8a34e310f3b4d2fa8ef4e768090dd1ff980b69d5505335ead"
+    },
+    {
+      "path": "docs/CAMERA_NAVIGATION.md",
+      "bytes": 3952,
+      "sha256": "0ae5c8c699208e9355567a85eba5afbf82c26c045c6df3ddf579b740db019358"
     },
     {
       "path": "docs/CURRENT_WORKFLOW.md",
@@ -178,6 +183,11 @@
       "sha256": "6617a28359cb0381604d4b705f8aeec8b0f5d9c4c335e900d7297d3833b8eb90"
     },
     {
+      "path": "evidence/validation/CAMERA_NAVIGATION.json",
+      "bytes": 1239,
+      "sha256": "d5ed4cc30b5d04f7da3c866d96ca084c77bd0fa16a7163c404963568f6e06878"
+    },
+    {
       "path": "evidence/validation/COMPARE_VALIDATION_26.json",
       "bytes": 565,
       "sha256": "d4e584663cceeeb8ce8f8d142e665c3491744ddcd64670780d28dc5c954e3838"
@@ -219,13 +229,13 @@
     },
     {
       "path": "examples/camera_intent/README.md",
-      "bytes": 2395,
-      "sha256": "281a35fcd50b41d5d3b5c9a8cdffdcb55eb1163bf37a142395203e378050b321"
+      "bytes": 2542,
+      "sha256": "879ad7a8a69cdf980d142c1a381cfe80c7b6cfcc663982422eb66ca6f1a76fd3"
     },
     {
       "path": "examples/camera_intent/make_synthetic_example.py",
-      "bytes": 2204,
-      "sha256": "d96684f6b7d423669b8011d75689dd2a1494b6674d9a82a37b4c789cc61ea729"
+      "bytes": 2205,
+      "sha256": "f6750747567be3353f6872abe9d509fc0caf286e2ec24499acd49d86d6fb4042"
     },
     {
       "path": "examples/camera_intent/ready/frame.jpg",
@@ -234,13 +244,13 @@
     },
     {
       "path": "examples/camera_intent/ready/proxy.json",
-      "bytes": 614451,
-      "sha256": "2efbe6b6430b435e4ddafa040f6d4b75f86df0274e6c68d846cc4320c03d680e"
+      "bytes": 2457651,
+      "sha256": "bf38dbfa9b69addcd967c5d91f173331c2dd3f3913475a02b6ffd49c9c345353"
     },
     {
       "path": "examples/camera_intent/ready/studio.html",
-      "bytes": 656563,
-      "sha256": "9c07ac6b79e9b22b0d71c4464777f2e1af877d8f9308d4868384699ef015b932"
+      "bytes": 2504157,
+      "sha256": "1e53d683aa91217970fbeeb222049687fd2f7064e5f1e7af3f0412eb23ddd400"
     },
     {
       "path": "skills/comfyui-reframe-continuity/SKILL.md",
@@ -319,13 +329,13 @@
     },
     {
       "path": "tests/js/test_camera_geometry.cjs",
-      "bytes": 1144,
-      "sha256": "a144baa604b1f86e474991670d788c882301318367a0e2c43280023b0a1ee21b"
+      "bytes": 1790,
+      "sha256": "280d89fe5f874f7b08033b89815e02a4cd7dba260d84d32852ab4ab385f651c2"
     },
     {
       "path": "tests/js/test_camera_intent_dom.cjs",
-      "bytes": 2770,
-      "sha256": "acd5e7f8cf7e138bc36df9c6bff2349142d8bec228787fd66a9520eaf85bdb34"
+      "bytes": 6066,
+      "sha256": "f941c05e4558e495793849692c6f04332363e563ca66a2c1ea0a145b94fdfc13"
     },
     {
       "path": "tests/js/test_current_controls.cjs",
@@ -380,7 +390,7 @@
     {
       "path": "tests/python/test_synthetic_example.py",
       "bytes": 1399,
-      "sha256": "a9076cb7dee94e217f1062e6908a4f195cfe0e3ff376a83bb85ca496bc101a82"
+      "sha256": "1fc30e121f7170d332c84bc7bf421e64ef9f177f8c8ede14a2efeef67e20dfec"
     },
     {
       "path": "ui/camera_intent/build_studio.py",
@@ -389,13 +399,18 @@
     },
     {
       "path": "ui/camera_intent/camera_math.js",
-      "bytes": 4154,
-      "sha256": "3dc08f50064ddca31ac6480baaad96d19dd7e2c261dba86683a83de3979de91a"
+      "bytes": 4767,
+      "sha256": "a4ca22e7762da38c289d981bd76c36eb30f4e77355a40a332d328bea803bc2a0"
+    },
+    {
+      "path": "ui/camera_intent/navigation.js",
+      "bytes": 3027,
+      "sha256": "99966ca8e271ab5a06dd5f46db6d5f80452cfd3aa9d2d0a4e9f30ee65b948856"
     },
     {
       "path": "ui/camera_intent/studio.html.template",
-      "bytes": 15853,
-      "sha256": "af5ca723cbc8934edf63548271f60557b28720e7c2a9c7ea81335ce42bc738b3"
+      "bytes": 20247,
+      "sha256": "b7f18ae529d049f9ff94ed741627ffd1ad904bfa276c9097a59127ea1c8b10b3"
     },
     {
       "path": "ui/camera_picker.html",
