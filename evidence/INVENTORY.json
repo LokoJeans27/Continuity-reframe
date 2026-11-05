@@ -1,6 +1,6 @@
 {
-  "file_count_including_inventory": 69,
-  "scope": "Current Git blob bytes; excludes this inventory and .git metadata. Historical inventories describe their recorded versions only. Windows working-copy line endings may differ.",
+  "file_count_including_inventory": 79,
+  "scope": "Current staged Git blob bytes; excludes this inventory and .git metadata. Historical inventories describe their recorded versions only. Windows working-copy line endings may differ.",
   "files_excluding_inventory": [
     {
       "path": "LICENSE",
@@ -9,8 +9,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 23095,
-      "sha256": "cf3d3f45af3fbda7dd5be844fca28b0c3494289fe0b4efcf08df73632fd7af99"
+      "bytes": 23621,
+      "sha256": "c14d5af0b698775bcc93f5fa5b33b81617ad720ad20b0d78cbf81311ee060cd6"
     },
     {
       "path": "attach_camera.py",
@@ -58,6 +58,16 @@
       "sha256": "2462fdea9787500e289666f592e5fa2d771cf9c6b25fe8fd994c60200c382aee"
     },
     {
+      "path": "docs/CAMERA_INTENT.md",
+      "bytes": 2811,
+      "sha256": "1cb93deafe542874076cfa363afca1399d1a512bd722ac0d432364997879dfbd"
+    },
+    {
+      "path": "docs/CAMERA_INTENT_TRIAL.md",
+      "bytes": 2052,
+      "sha256": "ea3e2adec667dca8a34e310f3b4d2fa8ef4e768090dd1ff980b69d5505335ead"
+    },
+    {
       "path": "docs/DEPENDENCY_NOTICES.en.md",
       "bytes": 2841,
       "sha256": "31bcccfc64b47559faef19fa38d4d684c858905b2cc889330556a66d93cb3891"
@@ -91,6 +101,11 @@
       "path": "docs/REPOSITORY_LAYOUT.md",
       "bytes": 2284,
       "sha256": "d82e978b8260741077922290a2e5b9a6e6941d2daf27d1e62ddccd8a1bf4309e"
+    },
+    {
+      "path": "docs/SELECTOR_REDESIGN.md",
+      "bytes": 2436,
+      "sha256": "690d0944c8ad6bff889b270e3c7c6303435fbe9a0c680bf231942c600cba9a76"
     },
     {
       "path": "docs/TUTORIAL.md",
@@ -273,14 +288,29 @@
       "sha256": "41ec7ebbef0b392d844e3e19c4b0477d686ff85f961f9148983cdf20dd477ac7"
     },
     {
+      "path": "tests/js/test_camera_geometry.cjs",
+      "bytes": 1144,
+      "sha256": "a144baa604b1f86e474991670d788c882301318367a0e2c43280023b0a1ee21b"
+    },
+    {
+      "path": "tests/js/test_camera_intent_dom.cjs",
+      "bytes": 2638,
+      "sha256": "7a628dc0c6a66004d70af348bafa1274a572f46347d53eedd216aeb40bbe663e"
+    },
+    {
       "path": "tests/js/test_current_controls.cjs",
-      "bytes": 2311,
-      "sha256": "625ea5b153b88435f500d64ee095e7a85eb384f0161af4a96801e35ce12b268c"
+      "bytes": 2567,
+      "sha256": "86db6e0da187b9224c65987de79df622ca824d87a61c62fb63cb778982378262"
     },
     {
       "path": "tests/js/test_manual_text.cjs",
-      "bytes": 3293,
-      "sha256": "d00ccacaa2fe8d554efdec70ca067346384b37652962a5af013970529393fdb6"
+      "bytes": 3563,
+      "sha256": "704ae611d264fd98edb913ecb8e3d0af03872a761cc49207efb1570664b1616e"
+    },
+    {
+      "path": "tests/js/test_scene_roundtrip.cjs",
+      "bytes": 2926,
+      "sha256": "c07e2ed659c4bde18a4e9ddc1727142a29d3024e13780ff37f57d54f2faffa54"
     },
     {
       "path": "tests/python/test_compare_pending.py",
@@ -308,14 +338,34 @@
       "sha256": "8ca74764c50202ed679c0d1c7a29b66322cea3e89facb1df6564d6081e5f52ee"
     },
     {
+      "path": "tests/python/test_studio_builder.py",
+      "bytes": 1313,
+      "sha256": "2d5dfe36f1d3db2671c078d38fba379a5f9f017923249e8af113e29e110ca123"
+    },
+    {
       "path": "tests/python/test_symlink_collect.py",
       "bytes": 1433,
       "sha256": "4452e91da975bd4acce42547a620d2b7f320cfaafd5240224c70ec416e5377b9"
     },
     {
+      "path": "ui/camera_intent/build_studio.py",
+      "bytes": 2194,
+      "sha256": "5684c7ff7ae1dc8937e5e41ff7dc114ac6d87d17adcf9851bf4d392ca89cea73"
+    },
+    {
+      "path": "ui/camera_intent/camera_math.js",
+      "bytes": 4154,
+      "sha256": "3dc08f50064ddca31ac6480baaad96d19dd7e2c261dba86683a83de3979de91a"
+    },
+    {
+      "path": "ui/camera_intent/studio.html.template",
+      "bytes": 15853,
+      "sha256": "af5ca723cbc8934edf63548271f60557b28720e7c2a9c7ea81335ce42bc738b3"
+    },
+    {
       "path": "ui/camera_picker.html",
-      "bytes": 9168,
-      "sha256": "52776b2eca505da162a5dc48be9e21946f8db8b995e320ae052aef4ef224bacc"
+      "bytes": 21611,
+      "sha256": "619928517de516af5bc64c143bb1bd9f0e871f021a6caf12934703d4a72ab504"
     },
     {
       "path": "visual.py",

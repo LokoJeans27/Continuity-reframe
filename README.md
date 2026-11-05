@@ -186,3 +186,8 @@ FLUX downloads may require Hugging Face login and explicit acceptance/access app
 The H3 artifact's published capitalization differs from the expected lowercase filename in the table. Make a new correctly named copy from the downloaded original. On a case-insensitive filesystem, if the alternate capitalization already occupies the destination, do not overwrite it: use a fresh configured model-search directory and copy the expected name there. Verify the server lists the exact expected name before build. Existing originals remain untouched.
 
 SageAttention 2.2.0 describes the existing tested environment. Its release artifacts are distributed through the upstream [GitHub releases](https://github.com/thu-ml/SageAttention/releases); do not assume that `pip install sageattention==2.2.0` from PyPI reproduces that environment. This kit does not install it or certify a clean setup.
+
+
+## Camera-intent prototype (local revision)
+
+The selector restores scene controls and preserves manual text; see [selector behavior](docs/SELECTOR_REDESIGN.md). For orbiting a locally supplied depth-derived Gaussian proxy and exporting camera coordinates plus a manual guide prompt, see [camera-intent studio](docs/CAMERA_INTENT.md). No personal frame, Gaussian payload, generated guide or recent test video is included. [Recent local pilot findings](docs/CAMERA_INTENT_TRIAL.md) distinguish execution from visual fidelity.

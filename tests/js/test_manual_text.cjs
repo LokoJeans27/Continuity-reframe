@@ -4,7 +4,8 @@ function load(path){
  const elements={};for(const id of ['az','el','dist','shot','notes','preview','azout','elout','distout','cam','ray','sidecam','side','file','save','status','regenerate'])elements[id]={value:'',attributes:{},handlers:{},addEventListener(n,f){this.handlers[n]=f},setAttribute(n,v){this.attributes[n]=v}};
  Object.assign(elements.az,{value:'0'});elements.el.value='0';elements.dist.value='1';elements.shot.value='front';
  let answer=false,confirms=0,saved;
- const ctx={document:{getElementById:id=>elements[id],createElement:()=>({click(){}})},window:{confirm(){confirms++;return answer}},URL:{createObjectURL(blob){saved=JSON.parse(blob.parts[0]);return 'blob:test'},revokeObjectURL(){}},Blob:class{constructor(parts){this.parts=parts}},setTimeout(){},console};
+ function mockElement(){return {value:'',attributes:{},handlers:{},addEventListener(n,f){this.handlers[n]=f},setAttribute(n,v){this.attributes[n]=v},removeAttribute(n){delete this.attributes[n]},appendChild(x){elements[x.id]=x},click(){}};}
+const ctx={document:{getElementById:id=>elements[id]||(elements[id]=mockElement()),createElement:()=>mockElement()},window:{confirm(){confirms++;return answer}},URL:{createObjectURL(blob){saved=JSON.parse(blob.parts[0]);return 'blob:test'},revokeObjectURL(){}},Blob:class{constructor(parts){this.parts=parts}},setTimeout(){},console};
  vm.createContext(ctx);vm.runInContext(js,ctx);
  return {ctx,e:elements,setAnswer:x=>answer=x,confirms:()=>confirms,saved:()=>saved};
 }
