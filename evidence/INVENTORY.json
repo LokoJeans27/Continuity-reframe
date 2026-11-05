@@ -1,5 +1,5 @@
 {
-  "file_count_including_inventory": 85,
+  "file_count_including_inventory": 86,
   "scope": "Current staged Git blob bytes, excluding this inventory and .git metadata. Historical inventories remain historical.",
   "files_excluding_inventory": [
     {
@@ -9,8 +9,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 23978,
-      "sha256": "bfc6001787ea63f8274ee4148e2a4cf5f0831b0a994c224d687be7effdce4b53"
+      "bytes": 24401,
+      "sha256": "e568be2372b1d7f8f32364af2e4a9932ea371c61c6e56c9dbba0fd5710a672f8"
     },
     {
       "path": "attach_camera.py",
@@ -59,13 +59,18 @@
     },
     {
       "path": "docs/CAMERA_INTENT.md",
-      "bytes": 3241,
-      "sha256": "22753ae20d4c340a053b9e9a3ee36e46236d078011391843ba6c7e9f0d8bbe26"
+      "bytes": 3492,
+      "sha256": "a63711ada88bd5306ddda5e8b0f63f65fe723014a4d511b987f6a5dae97db26e"
     },
     {
       "path": "docs/CAMERA_INTENT_TRIAL.md",
       "bytes": 2052,
       "sha256": "ea3e2adec667dca8a34e310f3b4d2fa8ef4e768090dd1ff980b69d5505335ead"
+    },
+    {
+      "path": "docs/CURRENT_WORKFLOW.md",
+      "bytes": 3870,
+      "sha256": "f500f889b25010a5eef1d5a647b81870bfbe985934c8522ebbb5a8887ae9ee01"
     },
     {
       "path": "docs/DEPENDENCY_NOTICES.en.md",
@@ -74,13 +79,13 @@
     },
     {
       "path": "docs/LEEME_ES.md",
-      "bytes": 3049,
-      "sha256": "63173960140ba1c47081dc9ecde292f915f25bf9a5a95bed702a637d6b92513b"
+      "bytes": 3640,
+      "sha256": "acf09bf155b0e822eefd600ce8589e99f8aa23856f8510c791504402f4fedd2e"
     },
     {
       "path": "docs/MANUAL_GUIDE_STEP.md",
-      "bytes": 1540,
-      "sha256": "45fd30bb65460c5bdb68086d6e603e9a4662bdd6d2ee52e330c1be292df8bc3a"
+      "bytes": 1676,
+      "sha256": "3a1056027ac826c4076f17ddcc50011ae7c4993099be9930a8c0be27c858fe6e"
     },
     {
       "path": "docs/MODEL_PROVENANCE.md",
@@ -89,8 +94,8 @@
     },
     {
       "path": "docs/QUICKSTART.md",
-      "bytes": 14303,
-      "sha256": "545a0dcb137a7e9db991e40790250083a33ae579b7162023f49207847acac868"
+      "bytes": 14499,
+      "sha256": "08700f57848e48bfde1ec94ee760ed0231eb29338366b0cb88da3b4728fc8186"
     },
     {
       "path": "docs/RELEASE_STATUS.md",

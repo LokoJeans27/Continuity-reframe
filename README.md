@@ -40,6 +40,10 @@ These technical diagrams contain no source footage or private images. Open `ui/c
 
 Frames at 38.000 s and 44.000 s from the owner-authorized [published demo](https://lnkd.in/p/ecCjd26T). These are snapshots of the earlier demonstration, including its original labels and limitations; they are not new benchmark results or proof of exact acting, identity or scene geometry. Only the seated demo is reproduced here. No third-party exterior footage is included. The manual image-generation step remains separate from the local H3 workflow.
 
+## Current workflow and compatibility
+
+The new orbit viewer is an optional camera-planning tool, not a replacement for the scene sheet or H3 pipeline. The text selector remains available when no proxy exists; using both is not required. Follow the [single current generation sequence and viewer handoff](docs/CURRENT_WORKFLOW.md) before choosing a helper. Proxy creation and image-guide generation remain external/manual.
+
 ## What happens where
 
 1. **CLI:** extract frames, prepare video/audio and create a scene sheet.

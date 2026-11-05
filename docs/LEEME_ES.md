@@ -2,12 +2,14 @@
 
 El código está publicado en [Continuity-reframe](https://github.com/LokoJeans27/Continuity-reframe). Consulta [QUICKSTART](QUICKSTART.md) para requisitos y comandos; se ejecutan desde la raíz del repositorio. No se incluye un instalador completo ni un par de video/guía listo para generar con H3.
 
-## Dos formas de elegir la intención de cámara
+El visor nuevo **no sustituye todavía el flujo completo**. Hay una sola secuencia de generación: preparar → describir/revisar escena → crear guía externa → revisar → build/submit/collect/compare. El selector de texto sigue siendo útil si no tienes proxy; no es obligatorio usar ambos. Consulta [qué reemplaza y qué no](CURRENT_WORKFLOW.md).
+
+## Herramientas de intención dentro de esa secuencia
 
 - Abre `ui/camera_picker.html`, carga la ficha creada por `prepare`, elige un plano y ajusta los controles. El esquema es conceptual. Conserva el texto manual y exporta una ficha nueva que todavía requiere revisión.
 - Para el visor girable, empieza por [el ejemplo sintético](../examples/camera_intent/README.md): incluye un JPEG válido, un proxy y `studio.html` listo para abrir localmente. Es geometría artificial de prueba, no una reconstrucción de una escena real. Para tu propio fotograma debes preparar el proxy externamente y seguir [CAMERA_INTENT](CAMERA_INTENT.md). El kit no convierte video en splat ni estima profundidad automáticamente.
 
-La imagen guía sigue siendo un paso **externo y manual** en ChatGPT, FLUX u otra herramienta autorizada. El visor exporta coordenadas y un prompt editable, no una imagen nueva. Adjunta el original manualmente; usa la captura del proxy solo si ayuda a expresar orientación. Su JSON no sustituye a `scene-reviewed.json` de H3.
+La imagen guía sigue siendo un paso **externo y manual** en ChatGPT, FLUX u otra herramienta autorizada. El visor exporta coordenadas y un prompt editable, no una imagen nueva. Adjunta el original manualmente; usa la captura del proxy solo si ayuda a expresar orientación. Su JSON no sustituye a `scene-reviewed.json` de H3. El prompt completo se utiliza en la herramienta de imagen; en el campo `camera` de la ficha escribe solo la descripción de la vista elegida y completa el resto de la revisión. No hay importador automático entre ambos formatos.
 
 Decide qué objetos deberían verse antes de pedir la guía. Revisa postura inicial, manos, fondo, oclusiones y margen del gesto; después completa los campos y las aprobaciones booleanas de la ficha. No hay llamadas automáticas a ChatGPT ni a una API de pago.
 
